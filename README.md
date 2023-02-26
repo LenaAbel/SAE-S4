@@ -1,6 +1,6 @@
 # LAKESIDE SPORTS FESTIVAL 🏊🏼‍♀️
 
-## *A MOBILE APPLICATION USING KOTLIN📱 * 
+## *A MOBILE APPLICATION USING KOTLIN* 📱 
 &nbsp;&nbsp;&nbsp;&nbsp;The goal of this project is to create a mobile application using the web application project as a basis.
 You can find the original project [here].(https://github.com/mcrayssac/SAE-S3)
 
