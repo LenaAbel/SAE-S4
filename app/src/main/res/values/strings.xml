@@ -1,3 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SAE-S4</string>
+    <string name="app_name"> </string>
+    <string name="lakeside_sport_festival">LAKESIDE SPORT FESTIVAL</string>
+    <string name="map">Map</string>
+    <string name="prestataires">Prestataires</string>
+    <string name="activites">Activités</string>
+    <string name="resultats">Résultats</string>
+    <string name="partez">3, 2, 1, PARTEZ !</string>
+    <string name="evenement_commence">Notre évenement commence dans … </string>
+    <string name="pq_evenement">POURQUOI CET EVENEMENT ? </string>
+    <string name="pq_evenement_text">Venez participer au travers d’épreuves et récolter des fonds pour <b>l’APF</b> ! \n\n Natation, athlétisme, VTT et bien d’autres encore seront au rendez-vous pour vous faire passer un moment inoubliable entre amis, en famille ou en solitaire. \nAlors n’hésitez plus et ressortez vos baskets du placard pour venir vous challenger dans la bonne humeur !
+        \n\nTous les bénéfices de cet évènement seront reversés à l’association APF pour aider à inclure les personnes à mobilité réduite dans le monde du sport.</string>
+    <string name="apf_logo">APF_logo</string>
 </resources>
