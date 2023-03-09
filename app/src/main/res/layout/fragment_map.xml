@@ -1,15 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".mapFragment">
 
-    <com.github.chrisbanes.photoview.PhotoView
-        android:id="@+id/photo_view"
+    <com.otaliastudios.zoom.ZoomLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/carte"
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:overScrollHorizontal="false"
+        app:overScrollVertical="false"
+        app:transformationGravity="center_horizontal"
+        app:minZoom="1"
+        app:maxZoom="4"
+        app:maxZoomType="realZoom"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/carte"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/carte" />
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintBottom_toBottomOf="@id/carte"
+                app:layout_constraintEnd_toEndOf="@id/carte"
+                app:layout_constraintHorizontal_bias="0.56"
+                app:layout_constraintStart_toStartOf="@id/carte"
+                app:layout_constraintTop_toTopOf="@id/carte"
+                app:layout_constraintVertical_bias="0.52"
+                app:srcCompat="@drawable/apf3" />
+
+        </FrameLayout>
+    </com.otaliastudios.zoom.ZoomLayout>
 
 </FrameLayout>
