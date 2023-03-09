@@ -12,4 +12,6 @@
     <string name="pq_evenement_text">Venez participer au travers d’épreuves et récolter des fonds pour <b>l’APF</b> ! \n\n Natation, athlétisme, VTT et bien d’autres encore seront au rendez-vous pour vous faire passer un moment inoubliable entre amis, en famille ou en solitaire. \nAlors n’hésitez plus et ressortez vos baskets du placard pour venir vous challenger dans la bonne humeur !
         \n\nTous les bénéfices de cet évènement seront reversés à l’association APF pour aider à inclure les personnes à mobilité réduite dans le monde du sport.</string>
     <string name="apf_logo">APF_logo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
