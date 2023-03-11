@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/id_heure_planning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/id_background_case_planning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_btw_element"
+        app:layout_constraintStart_toEndOf="@id/id_heure_planning"
+        tools:ignore="MissingConstraints">
+
+        <View
+            android:id='@+id/id_trait_horizontal_planning'
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/trait_taille"
+            android:background="@color/grisFonce"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/id_contenu_planning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_btw_element"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/id_trait_horizontal_planning"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
