@@ -12,4 +12,30 @@
     <string name="pq_evenement_text">Venez participer au travers d’épreuves et récolter des fonds pour <b>l’APF</b> ! \n\n Natation, athlétisme, VTT et bien d’autres encore seront au rendez-vous pour vous faire passer un moment inoubliable entre amis, en famille ou en solitaire. \nAlors n’hésitez plus et ressortez vos baskets du placard pour venir vous challenger dans la bonne humeur !
         \n\nTous les bénéfices de cet évènement seront reversés à l’association APF pour aider à inclure les personnes à mobilité réduite dans le monde du sport.</string>
     <string name="apf_logo">APF_logo</string>
+    <string name="cagnotte">Notre cagnotte</string>
+    <string name="partenaires">Nos partenaires</string>
+
+
+    <string name="page_accueil">Accueil</string>
+    <string name="page_planning_jour_1">Planning du mardi 15 août</string>
+    <string name="page_planning_jour_2">Planning du mercredi 16 août</string>
+    <string name="page_resto">Restaurants</string>
+
+    <!-- =============================================================================================== Menu-->
+    <string name="item_menu_1">Map</string>
+
+    <string name="item_menu_2">Prestataires</string>
+    <string name="sous_item_menu2_1">Restaurants</string>
+    <string name="sous_item_menu2_2">Clubs</string>
+    <string name="sous_item_menu2_3">Magasins</string>
+    <string name="item_menu_3">Planning</string>
+
+    <!-- =============================================================================================== Prestataire-->
+    <string name="btn_resto_text">Site web</string>
+
+    <!-- =============================================================================================== Planning-->
+    <string name="btn_chgmt_jour">Changer de jour</string>
+    <string name="maxDate">08/16/2023</string>
+    <string name="minDate">08/15/2023</string>
+    <string name="titre_page_resto">Restaurants présents</string>
 </resources>

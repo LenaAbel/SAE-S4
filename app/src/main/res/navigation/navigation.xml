@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/accueilFragment">
+
+    <fragment
+        android:id="@+id/accueilFragment"
+        android:name="com.example.sae.AccueilFragment"
+        android:label="@string/page_accueil"
+        tools:layout="@layout/fragment_accueil" />
+
+    <fragment
+        android:id="@+id/planningFragment"
+        android:name="com.example.sae.PlanningFragment"
+        android:label="@string/page_planning_jour_1"
+        tools:layout="@layout/fragment_planning" >
+        <action
+            android:id="@+id/action_planningFragment_self"
+            app:destination="@id/planningFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/restaurantFragment"
+        android:name="com.example.sae.RestaurantsFragment"
+        android:label="@string/page_resto"
+        tools:layout="@layout/fragment_restaurants" />
+
+</navigation>

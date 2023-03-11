@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_map"
+        android:icon="@drawable/icon_map"
+        android:title="@string/item_menu_1" />
+
+    <item
+        android:id="@+id/planningFragment"
+        android:icon="@drawable/icon_planning"
+        android:title="@string/item_menu_3" />
+
+    <item
+        android:id="@+id/menu_presta"
+        android:title="@string/item_menu_2">
+        <menu>
+            <item
+                android:id="@+id/sousMenuPresta_clubs"
+                android:icon="@drawable/icon_club"
+                android:title="@string/sous_item_menu2_2" />
+            <item
+                android:id="@+id/sousMenuPresta_magasins"
+                android:icon="@drawable/icon_magasin"
+                android:title="@string/sous_item_menu2_3" />
+            <item
+                android:id="@+id/restaurantFragment"
+                android:icon="@drawable/icon_resto"
+                android:title="@string/sous_item_menu2_1" />
+        </menu>
+    </item>
+</menu>
