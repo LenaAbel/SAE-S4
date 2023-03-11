@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,263 +8,281 @@
     android:clipToPadding="false"
     tools:context=".MainActivity">
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewCount">
 
-        <TextView
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="@string/lakeside_sport_festival"
-            android:textColor="@color/dark_blue"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:layout_marginTop="15dp"
-            android:fontFamily="@font/montserrat_bold"
-            android:textFontWeight="700"/>
-
-        <TextView
-            android:id="@+id/lakeside_sport_festival"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="671dp"
-            />
-
-        <TextView
-            android:id="@+id/partez"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/lakeside_sport_festival"
-            android:layout_marginTop="-636dp"
-            android:gravity="center"
-            android:text="@string/partez"
-            android:textAlignment="center"
-            android:textColor="@color/blue"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            tools:ignore="DuplicateIds" />
-
-        <TextView
-            android:id="@+id/evenement_commence"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/lakeside_sport_festival"
-            android:layout_marginTop="-599dp"
-            android:gravity="center"
-            android:text="@string/evenement_commence"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:textStyle="bold" />
-
-        <cn.iwgang.countdownview.CountdownView
-            android:id="@+id/mycountdown"
-            style="@font/montserrat_bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/evenement_commence"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="15dp"
-            app:isHideTimeBackground="false"
-            app:isShowDay="true"
-            app:isShowHour="true"
-            app:isShowMillisecond="false"
-            app:isShowMinute="true"
-            app:isShowSecond="true"
-            app:isTimeTextBold="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="@id/evenement_commence"
-            app:layout_constraintTop_toBottomOf="@+id/evenement_commence"
-            app:suffixDay="J"
-            app:suffixGravity="bottom"
-            app:suffixHour="H"
-            app:suffixMinute="M"
-            app:suffixSecond="S"
-            app:suffixTextColor="#000000"
-            app:suffixTextSize="20sp"
-            app:timeBgColor="@color/blue"
-            app:timeTextColor="#FFFFFF"
-            app:timeTextSize="30sp"
-            tools:ignore="MissingClass" />
-
-        <com.google.android.material.divider.MaterialDivider
-            android:id="@+id/divider"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/mycountdown"
-            android:layout_marginTop="20dp"
-            app:dividerColor="@color/blue"
-            app:dividerInsetEnd="25dp"
-            app:dividerInsetStart="25dp"
-            app:layout_constraintStart_toStartOf="@id/mycountdown" />
-        <TextView
-            android:id="@+id/pq_evenement"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/divider"
-            android:layout_marginTop="15dp"
-            android:gravity="center"
-            android:text="@string/pq_evenement"
-            android:textAlignment="center"
-            android:textColor="@color/blue"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            tools:ignore="DuplicateIds" />
-
-        <TextView
-            android:id="@+id/pq_evenement_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/divider"
-            android:layout_marginTop="48dp"
-            android:fontFamily="@font/montserrat_light"
-            android:gravity="center"
-            android:text="@string/pq_evenement_text"
-            android:textAlignment="center"
-            android:textColor="@color/blue"
-            android:textSize="15sp"
-            android:justificationMode="inter_word"
-            android:paddingTop="10dp"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp"
-            android:paddingBottom="10dp"/>
-
-        <ImageView
-            android:id="@+id/apf"
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
-            android:layout_below="@+id/pq_evenement_text"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="130dp"
-            android:layout_marginEnd="130dp"
-            android:contentDescription="@string/apf_logo"
-            android:cropToPadding="false"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/apf"
-            />
-
-        <com.google.android.material.divider.MaterialDivider
-            android:id="@+id/second_divider"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/apf"
-            android:layout_marginTop="20dp"
-            app:dividerColor="@color/blue"
-            app:dividerInsetEnd="25dp"
-            app:dividerInsetStart="25dp"
-            app:layout_constraintStart_toStartOf="@id/apf" />
-
-        <TextView
-            android:id="@+id/cagnotte"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/second_divider"
-            android:layout_marginTop="15dp"
-            android:gravity="center"
-            android:text="@string/cagnotte"
-            android:textAlignment="center"
-            android:textColor="@color/blue"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            tools:ignore="DuplicateIds"/>
-
-        <LinearLayout
-            android:id="@+id/progressBarLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/cagnotte"
-            android:layout_alignLeft="@id/cagnotte"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="2dp"
-            android:layout_marginTop="0dp">
-
-            <FrameLayout
-                android:layout_width="160dp"
-                android:layout_height="200dp"
-                android:layout_below="@+id/second_divider"
-                android:layout_gravity="center"
-                android:layout_marginTop="2dp">
-
-                <ProgressBar
-                    android:id="@+id/progressBar"
-                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:indeterminate="false"
-                    android:max="100"
-                    android:progress="49"
-                    android:progressDrawable="@drawable/circular_progress" />
-
-                <TextView
-                    android:id="@+id/progress_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="48.72%"
-                    android:textAlignment="center"
-                    android:textColor="@color/blue"
-                    android:textSize="25sp" />
-
-            </FrameLayout>
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/progress_money_earned"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center|center_vertical"
-                android:layout_marginTop="20sp"
-                android:layout_marginBottom="30dp"
-                android:text="2.435.984"
-                android:textAlignment="center"
-                android:textColor="@color/light_blue"
-                android:textSize="25dp" />
+                android:id="@+id/festival_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:text="@string/lakeside_sport_festival"
+                android:textColor="@color/dark_blue"
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/progress_recoltes"
-                android:layout_width="wrap_content"
+                android:id="@+id/lakeside_sport_festival"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center|center_vertical"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="20sp"
-                android:layout_marginBottom="30dp"
-                android:text="€ récoltés"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="671dp" />
+
+            <TextView
+                android:id="@+id/partez"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lakeside_sport_festival"
+                android:layout_marginTop="-636dp"
+                android:gravity="center"
+                android:text="@string/partez"
                 android:textAlignment="center"
                 android:textColor="@color/blue"
-                android:textSize="18dp" />
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
 
-        </LinearLayout>
+            <TextView
+                android:id="@+id/evenement_commence"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lakeside_sport_festival"
+                android:layout_marginTop="-599dp"
+                android:gravity="center"
+                android:text="@string/evenement_commence"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
-        <com.google.android.material.divider.MaterialDivider
-            android:id="@+id/third_divider"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/progressBarLayout"
-            android:layout_marginTop="20dp"
-            app:dividerColor="@color/blue"
-            app:dividerInsetEnd="25dp"
-            app:dividerInsetStart="25dp"
-            app:layout_constraintStart_toStartOf="@id/mycountdown" />
-        <TextView
-            android:id="@+id/partenaires"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/progressBarLayout"
-            android:layout_marginTop="35dp"
-            android:gravity="center"
-            android:text="@string/partenaires"
-            android:textAlignment="center"
-            android:textColor="@color/blue"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            tools:ignore="DuplicateIds"/>
+            <cn.iwgang.countdownview.CountdownView
+                android:id="@+id/mycountdown"
+                style="@font/montserrat_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/evenement_commence"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="15dp"
+                app:isHideTimeBackground="false"
+                app:isShowDay="true"
+                app:isShowHour="true"
+                app:isShowMillisecond="false"
+                app:isShowMinute="true"
+                app:isShowSecond="true"
+                app:isTimeTextBold="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="@id/evenement_commence"
+                app:layout_constraintTop_toBottomOf="@+id/evenement_commence"
+                app:suffixDay="J"
+                app:suffixGravity="bottom"
+                app:suffixHour="H"
+                app:suffixMinute="M"
+                app:suffixSecond="S"
+                app:suffixTextColor="#000000"
+                app:suffixTextSize="20sp"
+                app:timeBgColor="@color/blue"
+                app:timeTextColor="#FFFFFF"
+                app:timeTextSize="30sp"
+                tools:ignore="MissingClass" />
 
-    </RelativeLayout>
-</ScrollView>
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mycountdown"
+                android:layout_marginTop="20dp"
+                app:dividerColor="@color/blue"
+                app:dividerInsetEnd="25dp"
+                app:dividerInsetStart="25dp"
+                app:layout_constraintStart_toStartOf="@id/mycountdown" />
+
+            <TextView
+                android:id="@+id/pq_evenement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/pq_evenement"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/pq_evenement_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider"
+                android:layout_marginTop="48dp"
+                android:fontFamily="@font/montserrat_light"
+                android:gravity="center"
+                android:justificationMode="inter_word"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/pq_evenement_text"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="15sp"
+                tools:ignore="UnusedAttribute,VisualLintLongText" />
+
+            <ImageView
+                android:id="@+id/apf"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_below="@+id/pq_evenement_text"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="130dp"
+                android:layout_marginEnd="130dp"
+                android:contentDescription="@string/apf_logo"
+                android:cropToPadding="false"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/apf" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/second_divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/apf"
+                android:layout_marginTop="20dp"
+                app:dividerColor="@color/blue"
+                app:dividerInsetEnd="25dp"
+                app:dividerInsetStart="25dp"
+                app:layout_constraintStart_toStartOf="@id/apf" />
+
+            <TextView
+                android:id="@+id/cagnotte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/second_divider"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/cagnotte"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
+
+            <LinearLayout
+                android:id="@+id/progressBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/cagnotte"
+                android:layout_alignLeft="@id/cagnotte"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="0dp">
+
+                <FrameLayout
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/second_divider"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp">
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="49"
+                        android:progressDrawable="@drawable/circular_progress" />
+
+                    <TextView
+                        android:id="@+id/progress_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="48.72%"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue"
+                        android:textSize="25sp" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/progress_money_earned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginBottom="30dp"
+                    android:text="2.435.984"
+                    android:textAlignment="center"
+                    android:textColor="#0097A7"
+                    android:textSize="25dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/progress_recoltes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginBottom="30dp"
+                    android:text="€ récoltés"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue"
+                    android:textSize="18dp"
+                    tools:ignore="TextSizeCheck" />
+            </LinearLayout>
+
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/third_divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressBarLayout"
+                android:layout_marginTop="20dp"
+                app:dividerColor="@color/blue"
+                app:dividerInsetEnd="25dp"
+                app:dividerInsetStart="25dp"
+                app:layout_constraintStart_toStartOf="@id/mycountdown" />
+
+            <TextView
+                android:id="@+id/partenaires"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressBarLayout"
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:text="@string/partenaires"
+                android:textAlignment="center"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="DuplicateIds" />
+            <!--on below line we are adding view pager -->
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/idViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/partenaires"
+                android:layout_gravity="center"
+                android:contentDescription="Nos partenaires"
+                android:layout_margin="10dp" />
+        </RelativeLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
