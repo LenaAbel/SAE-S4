@@ -27,4 +27,14 @@
         android:label="@string/page_resto"
         tools:layout="@layout/fragment_restaurants" />
 
+    <fragment
+        android:id="@+id/menu_map"
+        android:name="com.example.sae_s4.MapFragment"
+        android:label="@string/map"
+        tools:layout="@layout/fragment_map">
+        <action
+        android:id="@+id/action_mapFragment_self"
+        app:destination="@id/menu_map" />
+    </fragment>
+
 </navigation>

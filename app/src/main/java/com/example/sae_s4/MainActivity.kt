@@ -75,6 +75,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * This function returns the end date of the festival
+     */
     private fun getEndDate(): Calendar {
         val endDate = Calendar.getInstance()
         // Set the end date to August 15th, 2023 at 8 am
