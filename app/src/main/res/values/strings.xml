@@ -39,6 +39,10 @@
     <string name="minDate">08/15/2023</string>
     <string name="titre_page_resto">Restaurants présents</string>
 
+    <!-- =============================================================================================== Map-->
+    <!-- bottom_sheet_filtre    -->
+    <string name="sheetbehavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

@@ -302,4 +302,45 @@
         </FrameLayout>
     </com.otaliastudios.zoom.ZoomLayout>
 
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/map_filtre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:behavior_hideable="true">
+
+        <LinearLayout
+            android:id="@+id/bottomsheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:behavior_peekHeight="60dp"
+            app:behavior_hideable="false"
+            app:layout_behavior="@string/sheetbehavior"
+            android:background="@color/white"
+            >
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Filtres"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textColor="@color/dark_blue"
+                android:background="@drawable/rounded_top_map_bottom_sheet"
+                android:elevation="30dp"
+                android:radius="50dp"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="azertyuiop"
+                android:textAlignment="center"
+                android:shadowRadius="@integer/material_motion_duration_long_1"/>
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
 </FrameLayout>
