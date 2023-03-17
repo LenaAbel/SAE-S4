@@ -19,6 +19,7 @@
     <string name="page_accueil">Accueil</string>
     <string name="page_planning_jour_1">Mardi 15 août</string>
     <string name="page_planning_jour_2">Mercredi 16 août</string>
+    <string name="page_club">Clubs</string>
     <string name="page_resto">Restaurants</string>
     <string name="page_detail_presta">Page présentation</string>
 
@@ -28,7 +29,6 @@
     <string name="item_menu_2">Prestataires</string>
     <string name="sous_item_menu2_1">Restaurants</string>
     <string name="sous_item_menu2_2">Clubs</string>
-    <string name="sous_item_menu2_3">Magasins</string>
     <string name="item_menu_3">Planning</string>
 
     <!-- =============================================================================================== Prestataire-->

@@ -45,7 +45,7 @@ class DataPrestataires {
             Prestataire(
                 "Courtepaille",
                 "https://www.courtepaille.com",
-                "Courtepaille est une chaîne de restaurants français spécialisée dans les grillades de viande. Fondée en 1961, la chaîne compte plus de 270 restaurants en France.\n"+
+                "Courtepaille est une chaîne de restaurants français spécialisée dans les grillades de viande. Fondée en 1961, la chaîne compte plus de 270 restaurants en France.\n" +
                         "Le restaurant Courtepaille propose une carte variée de grillades, de salades et d'autres plats traditionnels français, préparés avec des ingrédients frais et de qualité. Les clients peuvent également profiter d'un menu enfant et de formules adaptées aux groupes.",
                 R.drawable.img_resto_3,
                 mutableListOf(
@@ -60,6 +60,86 @@ class DataPrestataires {
                 R.drawable.img_resto_4,
                 mutableListOf(
                     Commentaire("Cheikh", "Je recommande.", "7.4 / 10"),
+                )
+            )
+        )
+
+
+        val clubs: MutableList<Prestataire> = mutableListOf(
+            Prestataire(
+                "Equitation Passion",
+                "https://www.equitationpassion.com",
+                "Créé en 1997, Equitation Passion est dirigé par la cavalière passionnée et monitrice d’équitation expérimentée Anne-Madeleine Schaeffer.\nProche de Belfort, le centre équestre est implanté dans un cadre verdoyant et logé par Sophie Jeannin, propriétaire des installations.\n" +
+                        "A cheval ou à poney, l’enseignement dispensé par 3 monitrices d’équitation diplômées, vous permettra de passer les examens fédéraux, de prendre part à des compétitions départementales, régionales et/ou nationales.",
+                R.drawable.img_club_1,
+                mutableListOf(
+                    Commentaire("Pegasus", "Club bien tenu, chevaux amicaux x )", "10 / 10"),
+                    Commentaire(
+                        "Petit tonnerre",
+                        "Galloper au vent c'est trop bien ! 🐎",
+                        "8.9 / 10"
+                    )
+                )
+            ),
+            Prestataire(
+                "TVB Tours Volley-Ball",
+                "https://www.toursvolleyball.com",
+                "Le Tours Volley-Ball est l’émanation de la section volley du Tours Etudiant Club, qui, depuis 1940, a maintenu la présence du Volley-Ball en Touraine.",
+                R.drawable.img_club_2,
+                mutableListOf(
+                    Commentaire("Peddro", "C'était amusant (●'◡'●)", "6.6 / 10"),
+                    Commentaire(
+                        "Marion",
+                        "Très bon clubs, mes enfants sont ravis !",
+                        "8 / 10"
+                    )
+                )
+            ),
+            Prestataire(
+                "ASPTT Chartres",
+                "https://chartres.asptt.com/activity/petanque",
+                "ASPTT Chartres un club omnisports depuis bien longtemps avec plus de 1300 licenciés eureliens ....",
+                R.drawable.img_club_3,
+                mutableListOf(
+                    Commentaire(
+                        "Marion",
+                        "Pas mal !!! 🙂",
+                        "7 / 10"
+                    ),
+                    Commentaire(
+                        "Onyankopo",
+                        "Gens très sympatiques 🧆",
+                        "7.9 / 10"
+                    ),
+                    Commentaire(
+                        "Mathéo",
+                        "Tout donne envie de revenir 😄",
+                        "8 / 10"
+                    )
+                )
+            ),
+            Prestataire(
+                "JDA Dijon Basket",
+                "https://www.jdadijon.com",
+                "La Jeanne d’Arc a été créée en janvier 1880  sous la forme d’un patronage par l’abbé Bizouard. Ce fut compte tenu du succès du nombre d’adhérents un déménagement dans le quartier de la plaine des roses dans la rue Lacodaire. Par trois fois la Jeanne d’Arc a failli sombrer corps et âme.\n" +
+                        "Grace à la volonté à la ténacité de quelques uns il n’en fut rien. Lors de la première guerre mondiale 1914/18 la Jeanne d’Arc comptait plus de 450 membres et 57 manquaient à la fin des hostilités. Aujourd’hui la Jeanne d’Arc limite ses activités à un seul sport le basket grâce à trois Présidents remarquables qui sont Emile Jobart Maurice Lebeau (1946-1967) et Henri Boisselot. (1967-1980).,Suite à une erreur dans un article de presse un journaliste avait mentionné et abrégé JDA  au lieu de Jeanne d’Arc.\n" + "" +
+                        "C’est ainsi que JDA restera par la suite la dénomination et le logo du getPrestataire.",
+                R.drawable.img_club_4,
+                mutableListOf(
+                    Commentaire("Cheikh", "Très bon club ⭐⭐⭐", "10 / 10"),
+                    Commentaire("Anna", "Au top 🏀, club bien tenu", "8.7 / 10"),
+                )
+            ),
+            Prestataire(
+                "Karting (Paul Ricard)",
+                "https://www.kartingcircuitpaulricard.com",
+                "Entièrement dédié aux loisirs et à la détente le karting est la prolongation de l’esprit du Circuit Paul Ricard, associant sécurité et esthétisme.\n" +
+                "Au karting du Circuit Paul Ricard, vivez le kart autrement : \n" +
+                "    • Devenez un pilote privilégié au volant de karts “dernière génération” performants et découvrez la qualité de nos installations et de nos infrastructures.\n" +
+                "    • Accessible à tous, le karting propose de nombreuses formules : location, stages (enfants, adultes, groupes), organisation de challenge, sessions d’entraînements, séminaires d’entreprises… à des tarifs particulièrement attractifs.",
+                R.drawable.img_club_5,
+                mutableListOf(
+                    Commentaire("BMW", "Une folie ! J'ai adoré ! 😍", "7.4 / 10"),
                 )
             )
         )

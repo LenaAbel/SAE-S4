@@ -15,14 +15,14 @@ class RestaurantsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        return inflater.inflate(R.layout.fragment_restaurants, container, false)
+        return inflater.inflate(R.layout.fragment_prestataires, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         val recyclerView: RecyclerView = view.findViewById(R.id.idRecyclerView)
-        recyclerView.adapter = RestaurantsAdapter(DataPrestataires.restaurants, this)
+        recyclerView.adapter = PrestatairesAdapter("resto", DataPrestataires.restaurants, this)
         recyclerView.setHasFixedSize(true)
     }
 }

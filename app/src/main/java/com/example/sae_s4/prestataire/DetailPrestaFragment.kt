@@ -1,6 +1,7 @@
 package com.example.sae_s4.prestataire
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,7 +18,12 @@ class DetailPrestaFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        prestataire = DataPrestataires.restaurants[arguments?.getString("presta")?.toInt()!!]
+        val type_prestataire = arguments?.getString("quel_type_presta")
+
+        if (type_prestataire == "club")
+            prestataire = DataPrestataires.clubs[arguments?.getString("presta")?.toInt()!!]
+        else
+            prestataire = DataPrestataires.restaurants[arguments?.getString("presta")?.toInt()!!]
     }
 
     override fun onCreateView(
@@ -43,8 +49,7 @@ class DetailPrestaFragment : Fragment() {
         if (prestataire.commentaires.size == 0) {
             val pasCommentaireTextView: TextView = view.findViewById(R.id.id_pas_commentaire)
             pasCommentaireTextView.visibility = View.VISIBLE
-        }
-        else {
+        } else {
             val recyclerView: RecyclerView = view.findViewById(R.id.id_recyclerView_page_presta)
             recyclerView.adapter = DetailPrestaAdapter(prestataire.commentaires)
             recyclerView.setHasFixedSize(true)
