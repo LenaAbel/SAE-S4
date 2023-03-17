@@ -1,8 +1,8 @@
 package com.example.sae.data
 
 import com.example.sae_s4.R
-import com.example.sae_s4.prestataire.Commentaire
 import com.example.sae_s4.prestataire.Prestataire
+import com.example.sae_s4.prestataire.Commentaire
 
 class DataPrestataires {
     companion object {

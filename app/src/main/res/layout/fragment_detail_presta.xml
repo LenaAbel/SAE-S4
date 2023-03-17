@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         android:padding="@dimen/space_btw_element"
         android:scrollbars="vertical"
-        tools:context=".prestataire.DetailPrestaFragment">
+        tools:context=".prestataires.DetailPrestaFragment">
 
         <TextView
             android:id="@+id/id_page_presta_nom"
