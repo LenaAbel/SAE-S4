@@ -17,8 +17,8 @@
 
 
     <string name="page_accueil">Accueil</string>
-    <string name="page_planning_jour_1">Planning du mardi 15 août</string>
-    <string name="page_planning_jour_2">Planning du mercredi 16 août</string>
+    <string name="page_planning_jour_1">Mardi 15 août</string>
+    <string name="page_planning_jour_2">Mercredi 16 août</string>
     <string name="page_resto">Restaurants</string>
 
     <!-- =============================================================================================== Menu-->

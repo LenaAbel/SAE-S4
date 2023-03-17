@@ -1,4 +1,4 @@
-package com.example.sae
+package com.example.sae_s4
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.example.sae_s4.R
 
 class PlanningFragment() : Fragment() {
 

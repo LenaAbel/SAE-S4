@@ -1,14 +1,14 @@
-package com.example.sae
+package com.example.sae_s4
 
-import android.graphics.Color
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
-import com.example.sae_s4.R
+
+//import com.example.sae_s4.R
+
 
 class PlanningAdapter(
     private val dataHeure: MutableList<String>,
@@ -26,14 +26,6 @@ class PlanningAdapter(
     override fun getItemCount() = dataHeure.size
 
     override fun onBindViewHolder(holder: ItemPlanningViewHolder, position: Int) {
-
-        val tabColor: MutableList<Int> = mutableListOf(
-            R.color.grisFonce.toInt(),
-            R.color.blue.toInt(),
-            R.color.blue.toInt(),
-            R.color.black.toInt(),
-            R.color.light_blue.toInt()
-        )
 
         val heure = dataHeure[position]
         holder.heure.text = heure

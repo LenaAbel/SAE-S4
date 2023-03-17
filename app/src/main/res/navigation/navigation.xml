@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/planningFragment"
-        android:name="com.example.sae.PlanningFragment"
+        android:name="com.example.sae_s4.PlanningFragment"
         android:label="@string/page_planning_jour_1"
         tools:layout="@layout/fragment_planning" >
         <action
@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@+id/restaurantFragment"
-        android:name="com.example.sae.RestaurantsFragment"
+        android:name="com.example.sae_s4.prestataires.RestaurantsFragment"
         android:label="@string/page_resto"
         tools:layout="@layout/fragment_restaurants" />
 

@@ -1,4 +1,4 @@
-package com.example.sae
+package com.example.sae_s4.prestataires
 
 import android.content.Intent
 import android.net.Uri
@@ -20,7 +20,7 @@ class RestaurantsAdapter(
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): RestaurantsAdapter.ItemRestoViewHolder {
+    ): ItemRestoViewHolder {
         val adapterLayout = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_of_list_prestataires, parent, false)
 
