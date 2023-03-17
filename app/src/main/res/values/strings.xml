@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name"> </string>
+    <string name="app_name">Lakeside sport festival</string>
     <string name="lakeside_sport_festival">LAKESIDE SPORT FESTIVAL</string>
     <string name="map">Map</string>
     <string name="prestataires">Prestataires</string>
@@ -17,9 +17,10 @@
 
 
     <string name="page_accueil">Accueil</string>
-    <string name="page_planning_jour_1">Planning du mardi 15 août</string>
-    <string name="page_planning_jour_2">Planning du mercredi 16 août</string>
+    <string name="page_planning_jour_1">Mardi 15 août</string>
+    <string name="page_planning_jour_2">Mercredi 16 août</string>
     <string name="page_resto">Restaurants</string>
+    <string name="page_detail_presta">Page présentation</string>
 
     <!-- =============================================================================================== Menu-->
     <string name="item_menu_1">Map</string>
@@ -31,13 +32,16 @@
     <string name="item_menu_3">Planning</string>
 
     <!-- =============================================================================================== Prestataire-->
-    <string name="btn_resto_text">Site web</string>
+    <string name="rubrique_a_propos">A propos</string>
+    <string name="rubrique_commentaires">Commentaires</string>
+    <string name="btn_presta_page">Page</string>
+    <string name="list_commentaire_vide">Pas de commentaires</string>
+    <string name="btn_presta_text">Site web</string>
 
     <!-- =============================================================================================== Planning-->
     <string name="btn_chgmt_jour">Changer de jour</string>
     <string name="maxDate">08/16/2023</string>
     <string name="minDate">08/15/2023</string>
-    <string name="titre_page_resto">Restaurants présents</string>
 
     <!-- =============================================================================================== Map-->
     <!-- bottom_sheet_filtre    -->

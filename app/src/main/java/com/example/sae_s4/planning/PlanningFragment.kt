@@ -1,4 +1,4 @@
-package com.example.sae
+package com.example.sae_s4.planning
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

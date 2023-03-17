@@ -37,15 +37,27 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/id_btn_presta"
+        android:id="@+id/id_btn_site_presta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/space_btw_element"
         android:layout_marginTop="@dimen/space_btw_element"
         android:padding="@dimen/btn_padding"
-        android:text="@string/btn_resto_text"
+        android:text="@string/btn_presta_text"
         android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@id/id_img_presta"
         app:layout_constraintTop_toBottomOf="@id/id_nom_presta"
+        tools:ignore="MissingConstraints,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/id_btn_page_presta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_btw_element"
+        android:padding="@dimen/btn_padding"
+        android:text="@string/btn_presta_page"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/id_btn_site_presta"
+        app:layout_constraintTop_toTopOf="@id/id_btn_site_presta"
         tools:ignore="MissingConstraints,TextContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
