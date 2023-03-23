@@ -55,11 +55,6 @@ class MapFragment : Fragment() {
         val rg = view.findViewById<RadioGroup>(R.id.type_presta)
         rg.setOnCheckedChangeListener(onCheckedChangeListener)
 
-        var btn_reset_filtre: Button = view.findViewById(R.id.id_btn_reset_filtre_map)
-        btn_reset_filtre.setOnClickListener { view: View ->
-            for (img in logoList)
-                img.visibility = View.VISIBLE
-        }
         return view
     }
 
@@ -92,6 +87,10 @@ class MapFragment : Fragment() {
                     else
                         img.visibility = View.INVISIBLE
                 }
+            }
+            R.id.id_btn_reset_filtre_map -> {
+                for (img in logoList)
+                    img.visibility = View.VISIBLE
             }
         }
     }
