@@ -1,59 +1,105 @@
 package com.example.sae_s4
 
+import android.content.Context
+import android.graphics.drawable.Drawable
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.RadioButton
+import android.widget.RadioGroup
+import android.widget.Toast
+import androidx.databinding.DataBindingUtil.setContentView
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [MapFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class MapFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        val view = inflater.inflate(R.layout.fragment_map, container, false)
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_map, container, false)
+       val rg = view.findViewById<RadioGroup>(R.id.type_presta)
+        rg.setOnCheckedChangeListener(onCheckedChangeListener)
+        return view
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment mapFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            MapFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
     }
+
+    private val onCheckedChangeListener = RadioGroup.OnCheckedChangeListener { group, checkedId ->
+        when (checkedId) {
+            R.id.resto -> {
+                //Boucler sur toutes les imageView
+                    // Penser à repasser toute les image à visible
+                    // if correspond à resto
+                        //puis les passer en invisble
+
+//                val tabIdImageViewResto = intArrayOf(0,3,6,9,12,11)
+
+                for (i in 2..23) {
+//                for( i in tabIdImageViewResto){
+
+                    val logo = view?.findViewById<ImageView>(R.id.logo+i)
+                    logo?.setVisibility(ImageView.INVISIBLE)
+                    Log.i("test", "azertyuiop")
+                    Log.i("test", (R.id.logo+i).toString())
+                    Log.i("test", i.toString())
+
+//                    val logo = view?.findViewWithTag<ImageView>()
+
+
+//                    if(logo?.getTag() == "@drawable/resto_logo"){
+//                        Log.i("test", "qsdfghjklm")
+    //                        Log.i("test", () logo?.getTag())
+
+//                    logo?.setVisibility(ImageView.INVISIBLE)
+
+
+//                    Log.i("logo", logo.toString())
+//                    Log.i("test2", logo?.contentDescription.toString())
+//                    if(logo?.tag.toString() == "1"){
+//                        logo?.setVisibility(ImageView.INVISIBLE)
+//                        Log.i("test", "azertyuiop")
+//                    }else{
+//                        Log.i("test", "qsdfghjklm")
+////                        Log.i("test", () logo?.getTag())
+//                        Log.i("test", logo?.tag.toString())
+//                    }
+
+
+                }
+
+                //ceontent description
+//                var logo = view?.findViewById<ImageView>(R.id.logo)
+//                logo?.setImageResource(R.drawable.baseline_restaurant_24)
+//                logo?.setVisibility(ImageView.INVISIBLE)
+
+                //https://stackoverflow.com/questions/26370993/how-to-get-image-resource
+
+
+//
+            }
+            R.id.club -> {
+                // Write your code here
+                Log.i("test", "poiuytreza")
+            }
+            R.id.magasin -> {
+                // Write your code here
+                Log.i("test", "wxcvbn")
+            }
+        }
+    }
+
 }
