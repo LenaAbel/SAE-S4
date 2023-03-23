@@ -354,21 +354,22 @@
                 android:text="Filtres"
                 android:textColor="@color/dark_blue"
                 android:textSize="30dp" />
-            <!--Type de prestataire -->
+
             <TextView
-                android:id="@+id/test_text"
+                android:id="@+id/id_text_filtre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="15dp"
+                android:layout_margin="@dimen/space_btw"
                 android:text="@string/filtrer_par"
                 android:textColor="@color/dark_blue"
-                android:textSize="20dp" />
+                android:textSize="@dimen/taille_nom" />
 
             <RadioGroup
                 android:id="@+id/type_presta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/space_btw"
                 android:orientation="horizontal"
                 android:textColor="@color/dark_blue">
 
@@ -379,16 +380,14 @@
                     android:id="@+id/resto"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
                     android:drawableTop="@drawable/baseline_restaurant_24"
                     android:text="@string/sous_item_menu2_1"
                     android:textColor="@color/dark_blue" />
-                <!--android:onClick="onRadioButtonClicked"-->
+
                 <RadioButton
                     android:id="@+id/club"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
                     android:drawableTop="@drawable/baseline_directions_run_24"
                     android:text="@string/sous_item_menu2_2"
                     android:textColor="@color/dark_blue" />
@@ -397,14 +396,20 @@
                     android:id="@+id/magasin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:layout_marginBottom="20dp"
                     android:drawableTop="@drawable/baseline_shopping_cart_24"
                     android:gravity="center"
                     android:text="@string/magasin"
                     android:textColor="@color/dark_blue" />
-            </RadioGroup>
 
+                <RadioButton
+                    android:id="@+id/id_btn_reset_filtre_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/reset"
+                    android:gravity="center"
+                    android:text="Effacer"
+                    android:textColor="@color/dark_blue" />
+            </RadioGroup>
 
         </LinearLayout>
 

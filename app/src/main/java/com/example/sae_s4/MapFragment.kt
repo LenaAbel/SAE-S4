@@ -1,23 +1,25 @@
 package com.example.sae_s4
 
+import android.annotation.SuppressLint
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.RadioGroup
 
 
 class MapFragment : Fragment() {
 
-    private lateinit var logoList : List<ImageView>
+    private lateinit var logoList: List<ImageView>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -52,6 +54,12 @@ class MapFragment : Fragment() {
         // Inflate the layout for this fragment
         val rg = view.findViewById<RadioGroup>(R.id.type_presta)
         rg.setOnCheckedChangeListener(onCheckedChangeListener)
+
+        var btn_reset_filtre: Button = view.findViewById(R.id.id_btn_reset_filtre_map)
+        btn_reset_filtre.setOnClickListener { view: View ->
+            for (img in logoList)
+                img.visibility = View.VISIBLE
+        }
         return view
     }
 
