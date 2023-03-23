@@ -61,6 +61,7 @@ class PlanningFragment() : Fragment() {
 
         val recyclerView = view.findViewById<RecyclerView>(R.id.idRecyclerViewPlanning)
         recyclerView.adapter = PlanningAdapter(heure, planning, "15.08.2023")
+        recyclerView.setHasFixedSize(true)
 
         val btnChangeDay: Button = view.findViewById(R.id.id_changement_jour)
         btnChangeDay.setOnClickListener {

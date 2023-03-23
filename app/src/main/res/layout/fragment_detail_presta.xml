@@ -24,15 +24,6 @@
             android:textSize="@dimen/taille_titre_page"
             tools:ignore="MissingConstraints" />
 
-        <!--        <ImageView-->
-        <!--            android:id="@+id/id_page_presta_img"-->
-        <!--            android:layout_width="@dimen/prestas_img_size"-->
-        <!--            android:layout_height="@dimen/prestas_img_size"-->
-        <!--            android:layout_marginTop="@dimen/space_btw_element"-->
-        <!--            android:contentDescription="@string/image_prestataire"-->
-        <!--            app:layout_constraintTop_toBottomOf="@id/id_page_presta_nom"-->
-        <!--            tools:ignore="MissingConstraints" />-->
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayoutDetailPerso"
             android:layout_width="match_parent"
