@@ -8,11 +8,11 @@
 
     <ImageView
         android:id="@+id/carte"
-        android:layout_width="500dp"
-        android:layout_height="450dp"
-        app:srcCompat="@drawable/carte"
+        android:layout_width="510dp"
+        android:layout_height="500dp"
+        android:paddingRight="5dp"
         android:scaleType="centerCrop"
-        android:paddingRight="5dp"/>
+        app:srcCompat="@drawable/carte" />
 
     <ImageView
         android:id="@+id/logo"
@@ -20,11 +20,11 @@
         android:layout_height="20dp"
         android:layout_marginStart="147dp"
         android:layout_marginTop="110dp"
+        android:tag="APF"
         app:layout_constraintBottom_toBottomOf="@id/carte"
         app:layout_constraintEnd_toEndOf="@id/carte"
         app:layout_constraintStart_toStartOf="@id/carte"
         app:layout_constraintTop_toTopOf="@id/carte"
-        android:tag="APF"
         app:srcCompat="@drawable/apf3" />
 
     <ImageView
@@ -301,8 +301,281 @@
 
         app:srcCompat="@drawable/logo_sport" />
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/description_logo_resto"
+        android:tag="1"
+        app:layout_constraintBottom_toBottomOf="@id/carte"
+        app:layout_constraintEnd_toEndOf="@id/carte"
+        app:layout_constraintStart_toStartOf="@id/carte"
+        app:layout_constraintTop_toTopOf="@id/carte"
+        app:srcCompat="@drawable/resto_logo" />
+
+    <ImageView
+        android:id="@+id/logo3"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="79dp"
+        android:contentDescription="@string/description_logo_sport"
+        android:tag="1"
+        app:layout_constraintBottom_toBottomOf="@id/carte"
+        app:layout_constraintEnd_toEndOf="@id/carte"
+        app:layout_constraintStart_toStartOf="@id/carte"
+        app:layout_constraintTop_toTopOf="@id/carte"
+        app:srcCompat="@drawable/logo_sport" />
+
+    <ImageView
+        android:id="@+id/logo4"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="@string/description_logo_sport"
+        app:layout_constraintBottom_toBottomOf="@id/carte"
+        app:layout_constraintEnd_toEndOf="@id/carte"
+        app:layout_constraintStart_toStartOf="@id/carte"
+        app:layout_constraintTop_toTopOf="@id/carte"
+        app:srcCompat="@drawable/logo_sport" />
+
+    <ImageView
+        android:id="@+id/logo5"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="47dp"
+        android:contentDescription="@string/description_logo_sport"
+        app:layout_constraintBottom_toBottomOf="@id/carte"
+        app:layout_constraintEnd_toEndOf="@id/carte"
+        app:layout_constraintStart_toStartOf="@id/carte"
+        app:layout_constraintTop_toTopOf="@id/carte"
+        app:srcCompat="@drawable/logo_sport" />
+
+    <ImageView
+        android:id="@+id/logo6"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="14dp"
+        android:contentDescription="@string/description_logo_magasin"
+        app:layout_constraintBottom_toBottomOf="@id/carte"
+        app:layout_constraintEnd_toEndOf="@id/carte"
+        app:layout_constraintStart_toStartOf="@id/carte"
+        app:layout_constraintTop_toTopOf="@id/carte"
+        app:srcCompat="@drawable/logo_shop" />
+
+    <ImageView
+        android:id="@+id/logo7"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="130dp"
+        android:contentDescription="@string/description_logo_resto"
+        app:layout_constraintBottom_toBottomOf="@id/carte"
+        app:layout_constraintEnd_toEndOf="@id/carte"
+        app:layout_constraintStart_toStartOf="@id/carte"
+        app:layout_constraintTop_toTopOf="@id/carte"
+        app:srcCompat="@drawable/resto_logo" />
+
+    <ImageView
+        android:id="@+id/logo8"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="130dp"
+        android:contentDescription="@string/description_logo_sport"
+        app:layout_constraintBottom_toBottomOf="@id/carte"
+        app:layout_constraintEnd_toEndOf="@id/carte"
+        app:layout_constraintStart_toStartOf="@id/carte"
+        app:layout_constraintTop_toTopOf="@id/carte"
+        app:srcCompat="@drawable/logo_sport" />
+
+    <ImageView
+        android:id="@+id/logo9"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="130dp"
+        android:contentDescription="@string/description_logo_magasin"
+        app:layout_constraintBottom_toBottomOf="@id/carte"
+        app:layout_constraintEnd_toEndOf="@id/carte"
+        app:layout_constraintStart_toStartOf="@id/carte"
+        app:layout_constraintTop_toTopOf="@id/carte"
+        app:srcCompat="@drawable/logo_shop" />
+
+    <ImageView
+        android:id="@+id/logo10"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="130dp"
+        android:contentDescription="@string/description_logo_sport"
+        app:layout_constraintBottom_toBottomOf="@id/carte"
+        app:layout_constraintEnd_toEndOf="@id/carte"
+        app:layout_constraintStart_toStartOf="@id/carte"
+        app:layout_constraintTop_toTopOf="@id/carte"
+        app:srcCompat="@drawable/logo_sport" />
+
+    <ImageView
+        android:id="@+id/logo11"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/description_logo_resto"
+        app:layout_constraintBottom_toBottomOf="@id/carte"
+        app:layout_constraintEnd_toEndOf="@id/carte"
+        app:layout_constraintStart_toStartOf="@id/carte"
+        app:layout_constraintTop_toTopOf="@id/carte"
+        app:srcCompat="@drawable/resto_logo" />
+
+    <ImageView
+        android:id="@+id/logo12"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="66dp"
+        android:contentDescription="@string/description_logo_sport"
+        app:layout_constraintBottom_toBottomOf="@id/carte"
+        app:layout_constraintEnd_toEndOf="@id/carte"
+        app:layout_constraintStart_toStartOf="@id/carte"
+        app:layout_constraintTop_toTopOf="@id/carte"
+        app:srcCompat="@drawable/logo_sport" />
+
+    <ImageView
+        android:id="@+id/logo13"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="51dp"
+        android:contentDescription="@string/description_logo_sport"
+        app:layout_constraintBottom_toBottomOf="@id/carte"
+        app:layout_constraintEnd_toEndOf="@id/carte"
+        app:layout_constraintStart_toStartOf="@id/carte"
+        app:layout_constraintTop_toTopOf="@id/carte"
+        app:srcCompat="@drawable/logo_sport" />
+
+    <ImageView
+        android:id="@+id/logo14"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="110dp"
+        android:contentDescription="@string/description_logo_magasin"
+        app:layout_constraintBottom_toBottomOf="@id/carte"
+        app:layout_constraintEnd_toEndOf="@id/carte"
+        app:layout_constraintStart_toStartOf="@id/carte"
+        app:layout_constraintTop_toTopOf="@id/carte"
+        app:srcCompat="@drawable/logo_shop" />
+
+    <ImageView
+        android:id="@+id/logo15"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="110dp"
+        android:contentDescription="@string/description_logo_resto"
+        app:layout_constraintBottom_toBottomOf="@id/carte"
+        app:layout_constraintEnd_toEndOf="@id/carte"
+        app:layout_constraintStart_toStartOf="@id/carte"
+        app:layout_constraintTop_toTopOf="@id/carte"
+        app:srcCompat="@drawable/resto_logo" />
+
+    <ImageView
+        android:id="@+id/logo16"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="110dp"
+        android:contentDescription="@string/description_logo_sport"
+        app:layout_constraintBottom_toBottomOf="@id/carte"
+        app:layout_constraintEnd_toEndOf="@id/carte"
+        app:layout_constraintStart_toStartOf="@id/carte"
+        app:layout_constraintTop_toTopOf="@id/carte"
+        app:srcCompat="@drawable/logo_sport" />
+
+    <ImageView
+        android:id="@+id/logo17"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/description_logo_sport"
+        app:layout_constraintBottom_toBottomOf="@id/carte"
+        app:layout_constraintEnd_toEndOf="@id/carte"
+        app:layout_constraintStart_toStartOf="@id/carte"
+        app:layout_constraintTop_toTopOf="@id/carte"
+        app:srcCompat="@drawable/logo_sport" />
+
+    <ImageView
+        android:id="@+id/logo18"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/description_logo_resto"
+        app:layout_constraintBottom_toBottomOf="@id/carte"
+        app:layout_constraintEnd_toEndOf="@id/carte"
+        app:layout_constraintStart_toStartOf="@id/carte"
+        app:layout_constraintTop_toTopOf="@id/carte"
+        app:srcCompat="@drawable/resto_logo" />
+
+    <ImageView
+        android:id="@+id/logo19"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/description_logo_magasin"
+        app:layout_constraintBottom_toBottomOf="@id/carte"
+        app:layout_constraintEnd_toEndOf="@id/carte"
+        app:layout_constraintStart_toStartOf="@id/carte"
+        app:layout_constraintTop_toTopOf="@id/carte"
+        app:srcCompat="@drawable/logo_shop" />
+
+    <ImageView
+        android:id="@+id/logo20"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/description_logo_sport"
+        app:layout_constraintBottom_toBottomOf="@id/carte"
+        app:layout_constraintEnd_toEndOf="@id/carte"
+        app:layout_constraintStart_toStartOf="@id/carte"
+        app:layout_constraintTop_toTopOf="@id/carte"
+        app:srcCompat="@drawable/logo_sport" />
+
+    <ImageView
+        android:id="@+id/logo21"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="75dp"
+        android:contentDescription="@string/description_logo_magasin"
+        app:layout_constraintBottom_toBottomOf="@id/carte"
+        app:layout_constraintEnd_toEndOf="@id/carte"
+        app:layout_constraintStart_toStartOf="@id/carte"
+        app:layout_constraintTop_toTopOf="@id/carte"
+        app:srcCompat="@drawable/logo_shop" />
+
+    <ImageView
+        android:id="@+id/logo22"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/description_logo_sport"
+        app:layout_constraintBottom_toBottomOf="@id/carte"
+        app:layout_constraintEnd_toEndOf="@id/carte"
+        app:layout_constraintStart_toStartOf="@id/carte"
+        app:layout_constraintTop_toTopOf="@id/carte"
+        app:srcCompat="@drawable/logo_sport" />
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/map_filtre"
         android:layout_width="match_parent"
         android:layout_height="300dp"
@@ -317,6 +590,7 @@
             android:orientation="vertical"
             app:behavior_hideable="false"
             app:behavior_peekHeight="60dp"
+            android:paddingBottom="20dp"
             app:layout_behavior="@string/sheetbehavior">
 
             <TextView
@@ -327,18 +601,20 @@
                 android:elevation="30dp"
                 android:gravity="center"
                 android:radius="50dp"
-                android:text="Filtres"
+                android:text="FILTRES"
+                android:textFontWeight="700"
                 android:textColor="@color/dark_blue"
                 android:textSize="30dp" />
             <!--Type de prestataire -->
-            <!--<TextView
+            <TextView
                 android:id="@+id/test_text"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"
                 android:text="@string/filtrer_par"
                 android:textColor="@color/dark_blue"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:paddingLeft="120dp"/>
 
             <RadioGroup
                 android:id="@+id/type_presta"
@@ -348,8 +624,8 @@
                 android:orientation="horizontal"
                 android:textColor="@color/dark_blue">
 
-                &lt;!&ndash;                android:background="@null"
-                                android:checked="true"&ndash;&gt;
+                <!--                android:background="@null"
+                                android:checked="true"-->
 
                 <RadioButton
                     android:id="@+id/resto"
@@ -359,7 +635,7 @@
                     android:drawableTop="@drawable/baseline_restaurant_24"
                     android:text="@string/sous_item_menu2_1"
                     android:textColor="@color/dark_blue" />
-                &lt;!&ndash;android:onClick="onRadioButtonClicked"&ndash;&gt;
+                <!--android:onClick="onRadioButtonClicked"-->
                 <RadioButton
                     android:id="@+id/club"
                     android:layout_width="wrap_content"
@@ -379,7 +655,7 @@
                     android:gravity="center"
                     android:text="@string/magasin"
                     android:textColor="@color/dark_blue" />
-            </RadioGroup>-->
+            </RadioGroup>
         </LinearLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </FrameLayout>

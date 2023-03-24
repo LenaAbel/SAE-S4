@@ -7,35 +7,23 @@ import android.os.Bundle
 import android.util.Log
 import android.view.*
 import android.widget.*
-import androidx.fragment.app.Fragment
 import android.view.GestureDetector
 import android.view.MotionEvent
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.RadioGroup
 
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [MapFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class MapFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
     private lateinit var logoList: List<ImageView>
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
     }
 
     @SuppressLint("ClickableViewAccessibility", "CutPasteId")
@@ -43,12 +31,10 @@ class MapFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+
         val view = inflater.inflate(R.layout.fragment_map, container, false)
 
-        // Get a reference to all the logo ImageViews
         logoList = listOf(
-            view.findViewById(R.id.logo),
             view.findViewById(R.id.logo2),
             view.findViewById(R.id.logo3),
             view.findViewById(R.id.logo4),
@@ -72,11 +58,13 @@ class MapFragment : Fragment() {
             view.findViewById(R.id.logo22),
         )
 
-// Add onClickListener to each logo ImageView
+
+        // Add onClickListener to each logo ImageView
         logoList.forEach { logo ->
             logo.setOnClickListener {
                 Log.d("MapFragment", "Logo clicked")
-                Toast.makeText(requireContext(), "Logo clicked: " + logo.tag, Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Logo clicked: " + logo.tag, Toast.LENGTH_SHORT)
+                    .show()
                 val builder = AlertDialog.Builder(requireContext())
                 builder.setTitle(logo.tag.toString())
                 builder.setMessage("Message de la pop-up")
@@ -96,24 +84,36 @@ class MapFragment : Fragment() {
     }
 
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+    }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment mapFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            MapFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
+    private val onCheckedChangeListener = RadioGroup.OnCheckedChangeListener { group, checkedId ->
+        when (checkedId) {
+            R.id.resto -> {
+                for (img in logoList) {
+                    if (img.contentDescription.equals("resto"))
+                        img.visibility = View.VISIBLE
+                    else
+                        img.visibility = View.INVISIBLE
                 }
             }
+            R.id.club -> {
+                for (img in logoList) {
+                    if (img.contentDescription.equals("sport"))
+                        img.visibility = View.VISIBLE
+                    else
+                        img.visibility = View.INVISIBLE
+                }
+            }
+            R.id.magasin -> {
+                for (img in logoList) {
+                    if (img.contentDescription.equals("magasin"))
+                        img.visibility = View.VISIBLE
+                    else
+                        img.visibility = View.INVISIBLE
+                }
+            }
+        }
     }
 }

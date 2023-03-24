@@ -2,7 +2,7 @@
 <resources>
     <dimen name="btn_padding">10dp</dimen>
     <dimen name="btn_prestas_text_size">18sp</dimen>
-    <dimen name="btn_radius">15dp</dimen>
+    <dimen name="radius">15dp</dimen>
     <dimen name="hauteur_cellule_planning">25dp</dimen>
     <dimen name="hrzt_prestas_margin">8dp</dimen>
     <dimen name="prestas_img_size">125dp</dimen>

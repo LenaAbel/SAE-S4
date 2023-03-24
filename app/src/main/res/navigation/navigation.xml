@@ -13,19 +13,53 @@
 
     <fragment
         android:id="@+id/planningFragment"
-        android:name="com.example.sae_s4.PlanningFragment"
+        android:name="com.example.sae_s4.planning.PlanningFragment"
         android:label="@string/page_planning_jour_1"
-        tools:layout="@layout/fragment_planning" >
+        tools:layout="@layout/fragment_planning">
         <action
             android:id="@+id/action_planningFragment_self"
             app:destination="@id/planningFragment" />
     </fragment>
 
     <fragment
+        android:id="@+id/clubFragment"
+        android:name="com.example.sae_s4.prestataire.ClubsFragment"
+        android:label="@string/page_club"
+        tools:layout="@layout/fragment_prestataires">
+        <action
+            android:id="@+id/action_detail_presta"
+            app:destination="@id/detailPrestaFragment">
+            <argument
+                android:name="quel_type_presta"
+                app:argType="string" />
+            <argument
+                android:name="presta"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
         android:id="@+id/restaurantFragment"
-        android:name="com.example.sae_s4.prestataires.RestaurantsFragment"
+        android:name="com.example.sae_s4.prestataire.RestaurantsFragment"
         android:label="@string/page_resto"
-        tools:layout="@layout/fragment_restaurants" />
+        tools:layout="@layout/fragment_prestataires">
+        <action
+            android:id="@+id/action_detail_presta"
+            app:destination="@id/detailPrestaFragment">
+            <argument
+                android:name="quel_type_presta"
+                app:argType="string" />
+            <argument
+                android:name="presta"
+                app:argType="string" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailPrestaFragment"
+        android:name="com.example.sae_s4.prestataire.DetailPrestaFragment"
+        android:label="@string/page_detail_presta"
+        tools:layout="@layout/fragment_detail_presta" />
 
     <fragment
         android:id="@+id/menu_map"
@@ -33,8 +67,8 @@
         android:label="@string/map"
         tools:layout="@layout/fragment_map">
         <action
-        android:id="@+id/action_mapFragment_self"
-        app:destination="@id/menu_map" />
+            android:id="@+id/action_mapFragment_self"
+            app:destination="@id/menu_map" />
     </fragment>
 
 </navigation>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/space_btw_element"
+        android:scrollbars="vertical"
+        tools:context=".prestataires.DetailPrestaFragment">
+
+        <TextView
+            android:id="@+id/id_page_presta_nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/space_btw_element"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/taille_titre_page"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutDetailPerso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/background_prestataire"
+            android:padding="@dimen/space_btw_element"
+            app:layout_constraintTop_toBottomOf="@id/id_page_presta_nom"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/id_a_propos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:text="@string/rubrique_a_propos"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/id_page_presta_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:lineSpacingExtra="@dimen/space_btw_element"
+                android:padding="@dimen/space_btw_element"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/id_a_propos" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/id_trait_detail_presta"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/gris"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayoutDetailPerso" />
+
+        <TextView
+            android:id="@+id/id_commentaire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/rubrique_commentaires"
+            android:textColor="@color/blue"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/id_trait_detail_presta" />
+
+        <TextView
+            android:id="@+id/id_pas_commentaire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="@string/list_commentaire_vide"
+            android:textColor="@color/blue"
+            android:visibility="invisible"
+            app:layout_constraintTop_toBottomOf="@id/id_commentaire" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/id_commentaire">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/id_recyclerView_page_presta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/space_btw_element"
+                app:layoutManager="LinearLayoutManager" />
+
+        </HorizontalScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
