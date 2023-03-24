@@ -14,12 +14,27 @@
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/carte" />
 
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="275dp"
+        android:layout_marginTop="320dp"
+        android:contentDescription="@string/description_logo_apf"
+        android:tag="APF"
+        app:layout_constraintBottom_toBottomOf="@id/carte"
+        app:layout_constraintEnd_toEndOf="@id/carte"
+        app:layout_constraintStart_toStartOf="@id/carte"
+        app:layout_constraintTop_toTopOf="@id/carte"
+        app:srcCompat="@drawable/apf3" />
+
     <ImageView
         android:id="@+id/logo2"
-        android:layout_width="40dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="176dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="359dp"
+        android:layout_marginTop="300dp"
         android:contentDescription="@string/description_logo_resto"
         android:tag="Subway"
         app:layout_constraintBottom_toBottomOf="@id/carte"
@@ -30,10 +45,10 @@
 
     <ImageView
         android:id="@+id/logo3"
-        android:layout_width="40dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="126dp"
-        android:layout_marginTop="79dp"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="221dp"
+        android:layout_marginTop="242dp"
         android:contentDescription="@string/description_logo_sport"
         android:tag="Equitation Passion"
         app:layout_constraintBottom_toBottomOf="@id/carte"
@@ -44,10 +59,10 @@
 
     <ImageView
         android:id="@+id/logo4"
-        android:layout_width="40dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="137dp"
-        android:layout_marginTop="60dp"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="188dp"
         android:contentDescription="@string/description_logo_sport"
         android:tag="TVB Tours Volleyball"
         app:layout_constraintBottom_toBottomOf="@id/carte"
@@ -58,12 +73,12 @@
 
     <ImageView
         android:id="@+id/logo5"
-        android:layout_width="40dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="47dp"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="150dp"
         android:contentDescription="@string/description_logo_sport"
-        android:tag="FFFTA Fédération Françase de Tir à l'arc"
+        android:tag="FFTA Fédération Françase de Tir à l'arc"
         app:layout_constraintBottom_toBottomOf="@id/carte"
         app:layout_constraintEnd_toEndOf="@id/carte"
         app:layout_constraintStart_toStartOf="@id/carte"
@@ -72,10 +87,10 @@
 
     <ImageView
         android:id="@+id/logo6"
-        android:layout_width="40dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="131dp"
-        android:layout_marginTop="14dp"
+        android:layout_width="32dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="235dp"
+        android:layout_marginTop="60dp"
         android:contentDescription="@string/description_logo_magasin"
         android:tag="Decathlon"
         app:layout_constraintBottom_toBottomOf="@id/carte"
@@ -86,10 +101,10 @@
 
     <ImageView
         android:id="@+id/logo7"
-        android:layout_width="40dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="130dp"
-        android:layout_marginTop="130dp"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="385dp"
         android:contentDescription="@string/description_logo_resto"
         android:tag="Camion qui fume"
         app:layout_constraintBottom_toBottomOf="@id/carte"
@@ -100,10 +115,10 @@
 
     <ImageView
         android:id="@+id/logo8"
-        android:layout_width="40dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="107dp"
-        android:layout_marginTop="130dp"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="385dp"
         android:contentDescription="@string/description_logo_sport"
         android:tag="BCC Badminton Club Chambly Oise"
         app:layout_constraintBottom_toBottomOf="@id/carte"
@@ -114,10 +129,10 @@
 
     <ImageView
         android:id="@+id/logo9"
-        android:layout_width="40dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="82dp"
-        android:layout_marginTop="130dp"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="385dp"
         android:contentDescription="@string/description_logo_magasin"
         android:tag="SportsRaquettes"
         app:layout_constraintBottom_toBottomOf="@id/carte"
@@ -128,10 +143,10 @@
 
     <ImageView
         android:id="@+id/logo10"
-        android:layout_width="40dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="57dp"
-        android:layout_marginTop="130dp"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="385dp"
         android:contentDescription="@string/description_logo_sport"
         android:tag="Karting Circuit Paul Ricard"
         app:layout_constraintBottom_toBottomOf="@id/carte"
@@ -142,10 +157,10 @@
 
     <ImageView
         android:id="@+id/logo11"
-        android:layout_width="40dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="67dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="105dp"
         android:contentDescription="@string/description_logo_resto"
         android:tag="Fontaine des saveurs"
         app:layout_constraintBottom_toBottomOf="@id/carte"
@@ -156,10 +171,10 @@
 
     <ImageView
         android:id="@+id/logo12"
-        android:layout_width="40dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="66dp"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="205dp"
         android:contentDescription="@string/description_logo_sport"
         android:tag="JDA Dijon Basket"
         app:layout_constraintBottom_toBottomOf="@id/carte"
@@ -170,10 +185,10 @@
 
     <ImageView
         android:id="@+id/logo13"
-        android:layout_width="40dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="109dp"
-        android:layout_marginTop="51dp"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="163dp"
         android:contentDescription="@string/description_logo_sport"
         android:tag="CMN Club Natation Marseille"
         app:layout_constraintBottom_toBottomOf="@id/carte"
@@ -184,10 +199,10 @@
 
     <ImageView
         android:id="@+id/logo14"
-        android:layout_width="40dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="67dp"
-        android:layout_marginTop="110dp"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="330dp"
         android:contentDescription="@string/description_logo_magasin"
         android:tag="InterSport"
         app:layout_constraintBottom_toBottomOf="@id/carte"
@@ -198,10 +213,10 @@
 
     <ImageView
         android:id="@+id/logo15"
-        android:layout_width="40dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="91dp"
-        android:layout_marginTop="110dp"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="330dp"
         android:tag="Courtepaille"
         android:contentDescription="@string/description_logo_resto"
         app:layout_constraintBottom_toBottomOf="@id/carte"
@@ -212,10 +227,10 @@
 
     <ImageView
         android:id="@+id/logo16"
-        android:layout_width="40dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="115dp"
-        android:layout_marginTop="110dp"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="330dp"
         android:contentDescription="@string/description_logo_sport"
         android:tag="ASPTT Charles"
         app:layout_constraintBottom_toBottomOf="@id/carte"
@@ -226,10 +241,10 @@
 
     <ImageView
         android:id="@+id/logo17"
-        android:layout_width="40dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="103dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="300dp"
         android:contentDescription="@string/description_logo_sport"
         android:tag="Escrime"
         app:layout_constraintBottom_toBottomOf="@id/carte"
@@ -240,10 +255,10 @@
 
     <ImageView
         android:id="@+id/logo18"
-        android:layout_width="40dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="213dp"
+        android:layout_marginTop="300dp"
         android:contentDescription="@string/description_logo_resto"
         android:tag="Citadelle de Belfort"
         app:layout_constraintBottom_toBottomOf="@id/carte"
@@ -254,10 +269,10 @@
 
     <ImageView
         android:id="@+id/logo19"
-        android:layout_width="40dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="300dp"
         android:contentDescription="@string/description_logo_magasin"
         android:tag="KartShop France"
         app:layout_constraintBottom_toBottomOf="@id/carte"
@@ -268,10 +283,10 @@
 
     <ImageView
         android:id="@+id/logo20"
-        android:layout_width="40dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="57dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="300dp"
         android:contentDescription="@string/description_logo_sport"
         android:tag="Montpellier Judo Olympics"
         app:layout_constraintBottom_toBottomOf="@id/carte"
@@ -282,10 +297,10 @@
 
     <ImageView
         android:id="@+id/logo21"
-        android:layout_width="40dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="71dp"
-        android:layout_marginTop="75dp"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="230dp"
         android:contentDescription="@string/description_logo_magasin"
         android:tag="Probike Shop"
         app:layout_constraintBottom_toBottomOf="@id/carte"
@@ -296,10 +311,10 @@
 
     <ImageView
         android:id="@+id/logo22"
-        android:layout_width="40dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="91dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="65dp"
         android:contentDescription="@string/description_logo_sport"
         android:tag="Lille Métropole Tennis de table"
         app:layout_constraintBottom_toBottomOf="@id/carte"

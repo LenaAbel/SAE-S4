@@ -35,6 +35,7 @@ class MapFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_map, container, false)
 
         logoList = listOf(
+            view.findViewById(R.id.logo1),
             view.findViewById(R.id.logo2),
             view.findViewById(R.id.logo3),
             view.findViewById(R.id.logo4),
@@ -62,8 +63,6 @@ class MapFragment : Fragment() {
         logoList.forEach { logo ->
             logo.setOnClickListener {
                 Log.d("MapFragment", "Logo clicked")
-                Toast.makeText(requireContext(), "Logo clicked: " + logo.tag, Toast.LENGTH_SHORT)
-                    .show()
                 val builder = AlertDialog.Builder(requireContext())
                 builder.setTitle(logo.tag.toString())
                 builder.setMessage("Message de la pop-up")
