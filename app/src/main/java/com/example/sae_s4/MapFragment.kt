@@ -13,6 +13,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.RadioGroup
 
@@ -21,12 +22,11 @@ class MapFragment : Fragment() {
 
     private lateinit var logoList: List<ImageView>
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
 
-    @SuppressLint("ClickableViewAccessibility", "CutPasteId")
+    @SuppressLint("ClickableViewAccessibility", "CutPasteId, MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -58,7 +58,6 @@ class MapFragment : Fragment() {
             view.findViewById(R.id.logo22),
         )
 
-
         // Add onClickListener to each logo ImageView
         logoList.forEach { logo ->
             logo.setOnClickListener {
@@ -80,6 +79,10 @@ class MapFragment : Fragment() {
                 dialog.show()
             }
         }
+        // Inflate the layout for this fragment
+        val rg = view.findViewById<RadioGroup>(R.id.type_presta)
+        rg.setOnCheckedChangeListener(onCheckedChangeListener)
+
         return view
     }
 
@@ -113,6 +116,10 @@ class MapFragment : Fragment() {
                     else
                         img.visibility = View.INVISIBLE
                 }
+            }
+            R.id.id_btn_reset_filtre_map -> {
+                for (img in logoList)
+                    img.visibility = View.VISIBLE
             }
         }
     }

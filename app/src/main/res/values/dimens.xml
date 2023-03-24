@@ -6,9 +6,9 @@
     <dimen name="hauteur_cellule_planning">25dp</dimen>
     <dimen name="hrzt_prestas_margin">8dp</dimen>
     <dimen name="prestas_img_size">125dp</dimen>
-    <dimen name="prestas_nom_size">20sp</dimen>
+    <dimen name="taille_nom">20sp</dimen>
     <dimen name="space_btw_element">10sp</dimen>
-    <dimen name="space_btw_prestas">17sp</dimen>
+    <dimen name="space_btw">17sp</dimen>
     <dimen name="taille_titre_page">35sp</dimen>
     <dimen name="trait_taille">1dp</dimen>
     <dimen name="window_padding">10sp</dimen>
