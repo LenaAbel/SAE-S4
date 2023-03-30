@@ -312,6 +312,7 @@
                 android:text="FILTRES"
                 android:textColor="@color/dark_blue"
                 android:textFontWeight="700"
+                android:fontFamily="@font/montserrat_medium"
                 android:textSize="30dp" />
 
             <TextView
@@ -321,6 +322,7 @@
                 android:layout_margin="@dimen/space_btw"
                 android:text="@string/filtrer_par"
                 android:textColor="@color/dark_blue"
+                android:fontFamily="@font/montserrat_regular"
                 android:textSize="@dimen/taille_nom" />
 
             <RadioGroup

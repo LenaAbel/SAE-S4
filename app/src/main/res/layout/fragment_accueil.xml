@@ -29,13 +29,14 @@
                 android:text="@string/lakeside_sport_festival"
                 android:textColor="@color/dark_blue"
                 android:textSize="25sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/lakeside_sport_festival"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
+                android:fontFamily="@font/montserrat_bold"
                 android:layout_marginBottom="671dp" />
 
             <TextView
@@ -48,6 +49,7 @@
                 android:text="@string/partez"
                 android:textAlignment="center"
                 android:textColor="@color/blue"
+                android:fontFamily="@font/montserrat_medium"
                 android:textSize="25sp"
                 android:textStyle="bold"
                 tools:ignore="DuplicateIds" />
@@ -62,6 +64,7 @@
                 android:text="@string/evenement_commence"
                 android:textAlignment="center"
                 android:textColor="@color/black"
+                android:fontFamily="@font/montserrat_bold"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
@@ -98,7 +101,8 @@
                 app:timeBgColor="@color/blue"
                 app:timeTextColor="#FFFFFF"
                 app:timeTextSize="30sp"
-                tools:ignore="MissingClass" />
+                tools:ignore="MissingClass"
+                android:fontFamily="@font/montserrat_bold"/>
 
             <com.google.android.material.divider.MaterialDivider
                 android:id="@+id/divider"
@@ -123,7 +127,8 @@
                 android:textColor="@color/blue"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                tools:ignore="DuplicateIds" />
+                tools:ignore="DuplicateIds"
+                android:fontFamily="@font/montserrat_medium"/>
 
             <TextView
                 android:id="@+id/pq_evenement_text"
@@ -131,7 +136,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/divider"
                 android:layout_marginTop="48dp"
-                android:fontFamily="@font/montserrat_light"
+                android:fontFamily="@font/montserrat_regular"
                 android:gravity="center"
                 android:justificationMode="inter_word"
                 android:paddingStart="20dp"
@@ -178,6 +183,7 @@
                 android:text="@string/cagnotte"
                 android:textAlignment="center"
                 android:textColor="@color/blue"
+                android:fontFamily="@font/montserrat_medium"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 tools:ignore="DuplicateIds" />
@@ -216,6 +222,7 @@
                         android:layout_gravity="center"
                         android:text="48.72%"
                         android:textAlignment="center"
+                        android:fontFamily="@font/montserrat_medium"
                         android:textColor="@color/blue"
                         android:textSize="25sp" />
 
@@ -230,7 +237,9 @@
                     android:layout_marginBottom="30dp"
                     android:text="2.435.984"
                     android:textAlignment="center"
-                    android:textColor="#0097A7"
+                    android:textColor="@color/light_blue"
+                    android:fontFamily="@font/montserrat_regular"
+
                     android:textSize="25dp"
                     tools:ignore="TextSizeCheck" />
 
@@ -246,6 +255,7 @@
                     android:textAlignment="center"
                     android:textColor="@color/blue"
                     android:textSize="18dp"
+                    android:fontFamily="@font/montserrat_regular"
                     tools:ignore="TextSizeCheck" />
             </LinearLayout>
 
@@ -273,6 +283,7 @@
                 android:textColor="@color/blue"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                android:fontFamily="@font/montserrat_medium"
                 tools:ignore="DuplicateIds" />
             <!--on below line we are adding view pager -->
             <androidx.viewpager.widget.ViewPager
