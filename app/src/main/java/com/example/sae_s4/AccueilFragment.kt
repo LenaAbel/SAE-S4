@@ -53,12 +53,31 @@ class AccueilFragment : Fragment() {
     }
 
 
-
     private fun getEndDate(): Calendar {
         val endDate = Calendar.getInstance()
         // Set the end date to August 15th, 2023 at 8 am
         endDate.set(2023, Calendar.AUGUST, 15, 8, 0, 0)
         Log.d("MainActivity", "End date: " + endDate.time.toString())
         return endDate
+    }
+
+    override fun onPause() {
+        super.onPause()
+        countdownTimeCalculator()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        countdownTimeCalculator()
+    }
+
+    override fun onStart() {
+        super.onStart()
+        countdownTimeCalculator()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        countdownTimeCalculator()
     }
 }

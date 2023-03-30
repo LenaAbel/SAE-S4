@@ -74,11 +74,8 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState != null) {
             viewPager.currentItem = savedInstanceState.getInt("current_page")
         }
-
         // Call the slideShow() method to start the automatic sliding
         slideShow()
-
-
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -89,7 +86,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onPause() {
         super.onPause()
-        countdownTimeCalculator()
         // Récupérer la position actuelle du slide et la stocker dans les préférences partagées
         val prefs = PreferenceManager.getDefaultSharedPreferences(this)
         val editor = prefs.edit()
@@ -99,54 +95,12 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        countdownTimeCalculator()
         // Récupérer la dernière position du slide à partir des préférences partagées et la définir sur le slide
         val prefs = PreferenceManager.getDefaultSharedPreferences(this)
         val position = prefs.getInt("current_slide_position", 0)
         viewPager.setCurrentItem(position, false)
     }
 
-    /**
-     * This function calculates the time left until the end date of the festival
-     */
-    private fun countdownTimeCalculator() {
-        // Get the countdown view
-        val myCountdownView = findViewById<View>(R.id.mycountdown) as? CountdownView
-
-        if (myCountdownView != null) {
-            // Get the shared preferences
-            val sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this)
-
-            // Get the saved end date or use default value (August 15th, 2023)
-            val endDate = Calendar.getInstance()
-            endDate.timeInMillis = sharedPrefs.getLong("end_date", getEndDate().timeInMillis)
-
-            // Calculate the time left until the end date
-            val now = Calendar.getInstance()
-            Log.d("MainActivity", "Now: " + now.timeInMillis.toString())
-            val timeInMillis = getEndDate().timeInMillis - now.timeInMillis - 7200000
-            myCountdownView.start(timeInMillis)
-
-            // Save the end date in the shared preferences
-            with(sharedPrefs.edit()) {
-                putLong("end_date", endDate.timeInMillis)
-                apply()
-            }
-        } else {
-            Log.d("MainActivity", "myCountdownView is null")
-        }
-    }
-
-    /**
-     * This function returns the end date of the festival
-     */
-    private fun getEndDate(): Calendar {
-        val endDate = Calendar.getInstance()
-        // Set the end date to August 15th, 2023 at 8 am
-        endDate.set(2023, Calendar.AUGUST, 15, 8, 0, 0)
-        Log.d("MainActivity", "End date: " + endDate.time.toString())
-        return endDate
-    }
 
     /**
      * This function is used to start the automatic sliding of the images
