@@ -59,33 +59,51 @@ class MapFragment : Fragment() {
                 Log.d("MapFragment", "Logo clicked")
                 val builder = AlertDialog.Builder(requireContext())
 
-                val titre: String
-                if (logo.contentDescription == "resto") {
-                    titre = DataPrestataires.restaurants[logo.tag.toString().toInt()].nom_prestataire
-                }
-                else if (logo.contentDescription == "sport") {
-                    titre = DataPrestataires.clubs[logo.tag.toString().toInt()].nom_prestataire
-                }
-                else
+                var titre: String
+
+                try {
+                    Log.i("", logo.tag.toString().toInt().toString())
+                    if (logo.contentDescription == "resto") {
+                        titre = DataPrestataires.restaurants[logo.tag.toString()
+                            .toInt()].nom_prestataire
+                    } else {
+                        titre = DataPrestataires.clubs[logo.tag.toString().toInt()].nom_prestataire
+                    }
+
+                    // Create a button in the popup to navigate to DetailPrestaFragment
+                    builder.setPositiveButton("Détails") { _, _ ->
+                        Log.i("", R.id.action_detail_presta.toString())
+                        if (logo.contentDescription == "resto") {
+                            Navigation.findNavController(view)
+                                .navigate(
+                                    R.id.action_detail_presta,
+                                    bundleOf(
+                                        "quel_type_presta" to "resto",
+                                        "presta" to logo.tag
+                                    )
+                                )
+                        }
+
+                        else if (logo.contentDescription == "sport") {
+                            Navigation.findNavController(view)
+                                .navigate(
+                                    R.id.action_detail_presta,
+                                    bundleOf(
+                                        "quel_type_presta" to "club",
+                                        "presta" to logo.tag
+                                    )
+                                )
+                        }
+                    }
+                } catch (e: NumberFormatException) {
+                    Log.i("", logo.tag.toString())
                     titre = logo.tag.toString()
+                }
 
                 builder.setTitle(titre)
 
-                // Create a button in the popup to navigate to DetailPrestaFragment
-                builder.setPositiveButton("Détails") { _, _ ->
-                    if (logo.contentDescription == "resto") {
-                        Navigation.findNavController(view)
-                            .navigate(
-                                R.id.action_detail_presta,
-                                bundleOf(
-                                    "quel_type_presta" to "resto",
-                                    "presta" to logo.tag.toString()
-                                )
-                            )
-                    }
-                }
-
                 builder.setNegativeButton("Annuler") { dialog, which ->
+                    // Action to execute when user clicks "Annuler"
                 }
 
                 // Show the popup
