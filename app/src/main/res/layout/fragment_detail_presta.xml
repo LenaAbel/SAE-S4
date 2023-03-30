@@ -23,7 +23,7 @@
             android:textColor="@color/blue"
             android:textSize="@dimen/taille_titre_page"
             tools:ignore="MissingConstraints"
-            android:fontFamily="@font/montserrat_bold"/>
+            android:fontFamily="@font/montserrat_medium"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayoutDetailPerso"
