@@ -64,10 +64,6 @@
         android:name="com.example.sae_s4.prestataire.DetailPrestaFragment"
         android:label="@string/page_detail_presta"
         tools:layout="@layout/fragment_detail_presta">
-
-<!--        <action-->
-<!--            android:id="@+id/action_detail_to_map"-->
-<!--            app:destination="@id/menu_map"/>-->
     </fragment>
 
 
@@ -77,8 +73,15 @@
         android:label="@string/map"
         tools:layout="@layout/fragment_map">
         <action
-            android:id="@+id/action_mapFragment_self"
-            app:destination="@id/menu_map" />
+            android:id="@+id/action_detail_presta"
+            app:destination="@id/detailPrestaFragment">
+            <argument
+                android:name="quel_type_presta"
+                app:argType="string" />
+            <argument
+                android:name="presta"
+                app:argType="string" />
+        </action>
     </fragment>
 
 </navigation>
