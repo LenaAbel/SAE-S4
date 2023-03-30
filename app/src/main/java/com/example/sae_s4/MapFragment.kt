@@ -11,6 +11,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.RadioGroup
+import androidx.core.os.bundleOf
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import com.example.sae_s4.prestataire.DetailPrestaFragment
 import com.example.sae.data.DataPrestataires
@@ -59,21 +61,43 @@ class MapFragment : Fragment() {
             logo.setOnClickListener {
                 Log.d("MapFragment", "Logo clicked")
                 val builder = AlertDialog.Builder(requireContext())
-                builder.setTitle(logo.tag.toString())
+
+                var titre: String
+                if (logo.contentDescription == "resto") {
+                    titre = DataPrestataires.restaurants[logo.tag.toString().toInt()].nom_prestataire
+                }
+                else if (logo.contentDescription == "sport") {
+                    titre = DataPrestataires.clubs[logo.tag.toString().toInt()].nom_prestataire
+                }
+                else
+                    titre = logo.tag.toString()
+
+                builder.setTitle(titre)
 
                 // Create a button in the popup to navigate to DetailPrestaFragment
                 builder.setPositiveButton("Détails") { _, _ ->
                     // Navigate to DetailPrestaFragment with the tag name as argument
-                    val bundle = Bundle()
-                    bundle.putString("presta_name", logo.tag.toString())
+//                    val bundle = Bundle()
+//                    bundle.putString("presta_name", logo.tag.toString())
+//
+//                    val detailPrestaFragment = DetailPrestaFragment()
+//                    detailPrestaFragment.arguments = bundle
+//
+//                    activity?.supportFragmentManager?.beginTransaction()
+//                        ?.replace(R.id.myNavHostFragment, detailPrestaFragment)
+//                        ?.addToBackStack(null)
+//                        ?.commit()
 
-                    val detailPrestaFragment = DetailPrestaFragment()
-                    detailPrestaFragment.arguments = bundle
-
-                    activity?.supportFragmentManager?.beginTransaction()
-                        ?.replace(R.id.myNavHostFragment, detailPrestaFragment)
-                        ?.addToBackStack(null)
-                        ?.commit()
+                    if (logo.contentDescription == "resto") {
+                        Navigation.findNavController(view)
+                            .navigate(
+                                R.id.action_detail_presta,
+                                bundleOf(
+                                    "quel_type_presta" to "resto",
+                                    "presta" to logo.tag
+                                )
+                            )
+                    }
                 }
 
                 builder.setNegativeButton("Annuler") { dialog, which ->

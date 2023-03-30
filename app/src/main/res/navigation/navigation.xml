@@ -9,7 +9,11 @@
         android:id="@+id/accueilFragment"
         android:name="com.example.sae.AccueilFragment"
         android:label="@string/page_accueil"
-        tools:layout="@layout/fragment_accueil" />
+        tools:layout="@layout/fragment_accueil">
+        <action
+            android:id="@+id/action_accueilFragment_self"
+            app:destination="@id/accueilFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/planningFragment"
