@@ -10,7 +10,7 @@ import androidx.viewpager.widget.PagerAdapter
 import java.util.*
 
 
-class ViewPagerAdapter(val context: Context, val imageList: List<Int>) : PagerAdapter() {
+class ViewPagerAdapter(val context: Context?, val imageList: List<Int>) : PagerAdapter() {
     // on below line we are creating a method
     // as get count to return the size of the list.
     override fun getCount(): Int {
@@ -28,7 +28,7 @@ class ViewPagerAdapter(val context: Context, val imageList: List<Int>) : PagerAd
         // on below line we are initializing
         // our layout inflater.
         val mLayoutInflater =
-            context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+            context?.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
 
         // on below line we are inflating our custom
         // layout file which we have created.
