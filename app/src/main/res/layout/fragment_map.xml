@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MapFragment"
-    android:background="@color/white">
+    android:background="@color/white"
+    tools:context=".MapFragment">
 
     <ImageView
         android:id="@+id/carte"
@@ -78,7 +78,6 @@
         android:layout_height="35dp"
         android:layout_marginStart="12dp"
         android:layout_marginTop="150dp"
-        android:contentDescription="@string/description_logo_sport"
         android:tag="FFTA Fédération Françase de Tir à l'arc"
         app:layout_constraintBottom_toBottomOf="@id/carte"
         app:layout_constraintEnd_toEndOf="@id/carte"
@@ -92,7 +91,6 @@
         android:layout_height="35dp"
         android:layout_marginStart="235dp"
         android:layout_marginTop="60dp"
-        android:contentDescription="@string/description_logo_magasin"
         android:tag="Decathlon"
         app:layout_constraintBottom_toBottomOf="@id/carte"
         app:layout_constraintEnd_toEndOf="@id/carte"
@@ -134,7 +132,6 @@
         android:layout_height="35dp"
         android:layout_marginStart="99dp"
         android:layout_marginTop="385dp"
-        android:contentDescription="@string/description_logo_magasin"
         android:tag="Sports Raquettes"
         app:layout_constraintBottom_toBottomOf="@id/carte"
         app:layout_constraintEnd_toEndOf="@id/carte"
@@ -190,7 +187,6 @@
         android:layout_height="35dp"
         android:layout_marginStart="171dp"
         android:layout_marginTop="163dp"
-        android:contentDescription="@string/description_logo_sport"
         android:tag="CMN Club Natation Marseille"
         app:layout_constraintBottom_toBottomOf="@id/carte"
         app:layout_constraintEnd_toEndOf="@id/carte"
@@ -205,7 +201,6 @@
         android:layout_height="35dp"
         android:layout_marginStart="155dp"
         android:layout_marginTop="300dp"
-        android:contentDescription="@string/description_logo_sport"
         android:tag="Escrime"
         app:layout_constraintBottom_toBottomOf="@id/carte"
         app:layout_constraintEnd_toEndOf="@id/carte"
@@ -233,7 +228,6 @@
         android:layout_height="35dp"
         android:layout_marginStart="91dp"
         android:layout_marginTop="300dp"
-        android:contentDescription="@string/description_logo_magasin"
         android:tag="KartShop France"
         app:layout_constraintBottom_toBottomOf="@id/carte"
         app:layout_constraintEnd_toEndOf="@id/carte"
@@ -247,7 +241,6 @@
         android:layout_height="35dp"
         android:layout_marginStart="27dp"
         android:layout_marginTop="300dp"
-        android:contentDescription="@string/description_logo_sport"
         android:tag="Montpellier Judo Olympics"
         app:layout_constraintBottom_toBottomOf="@id/carte"
         app:layout_constraintEnd_toEndOf="@id/carte"
@@ -261,7 +254,6 @@
         android:layout_height="35dp"
         android:layout_marginStart="66dp"
         android:layout_marginTop="230dp"
-        android:contentDescription="@string/description_logo_magasin"
         android:tag="Probike Shop"
         app:layout_constraintBottom_toBottomOf="@id/carte"
         app:layout_constraintEnd_toEndOf="@id/carte"
@@ -275,7 +267,6 @@
         android:layout_height="35dp"
         android:layout_marginStart="121dp"
         android:layout_marginTop="65dp"
-        android:contentDescription="@string/description_logo_sport"
         android:tag="Lille Métropole Tennis de table"
         app:layout_constraintBottom_toBottomOf="@id/carte"
         app:layout_constraintEnd_toEndOf="@id/carte"
@@ -307,12 +298,12 @@
                 android:layout_height="60dp"
                 android:background="@drawable/rounded_top_map_bottom_sheet"
                 android:elevation="30dp"
+                android:fontFamily="@font/montserrat_medium"
                 android:gravity="center"
                 android:radius="50dp"
                 android:text="FILTRES"
                 android:textColor="@color/dark_blue"
                 android:textFontWeight="700"
-                android:fontFamily="@font/montserrat_medium"
                 android:textSize="30dp" />
 
             <TextView
@@ -320,9 +311,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/space_btw"
+                android:fontFamily="@font/montserrat_regular"
                 android:text="@string/filtrer_par"
                 android:textColor="@color/dark_blue"
-                android:fontFamily="@font/montserrat_regular"
                 android:textSize="@dimen/taille_nom" />
 
             <RadioGroup
@@ -371,5 +362,6 @@
                     android:text="Effacer"
                     android:textColor="@color/dark_blue" />
             </RadioGroup>
-    </LinearLayout>
-</androidx.coordinatorlayout.widget.CoordinatorLayout></FrameLayout>
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>
