@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MapFragment">
+    tools:context=".MapFragment"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/carte"
@@ -64,7 +65,7 @@
         android:layout_marginStart="252dp"
         android:layout_marginTop="188dp"
         android:contentDescription="@string/description_logo_sport"
-        android:tag="TVB Tours Volleyball"
+        android:tag="TVB Tours Volley-Ball"
         app:layout_constraintBottom_toBottomOf="@id/carte"
         app:layout_constraintEnd_toEndOf="@id/carte"
         app:layout_constraintStart_toStartOf="@id/carte"
@@ -106,7 +107,7 @@
         android:layout_marginStart="230dp"
         android:layout_marginTop="385dp"
         android:contentDescription="@string/description_logo_resto"
-        android:tag="Camion qui fume"
+        android:tag="Le camion qui fume"
         app:layout_constraintBottom_toBottomOf="@id/carte"
         app:layout_constraintEnd_toEndOf="@id/carte"
         app:layout_constraintStart_toStartOf="@id/carte"
@@ -120,7 +121,7 @@
         android:layout_marginStart="169dp"
         android:layout_marginTop="385dp"
         android:contentDescription="@string/description_logo_sport"
-        android:tag="BCC Badminton Club Chambly Oise"
+        android:tag="ASPTT Chartres"
         app:layout_constraintBottom_toBottomOf="@id/carte"
         app:layout_constraintEnd_toEndOf="@id/carte"
         app:layout_constraintStart_toStartOf="@id/carte"
@@ -148,7 +149,7 @@
         android:layout_marginStart="27dp"
         android:layout_marginTop="385dp"
         android:contentDescription="@string/description_logo_sport"
-        android:tag="Karting Circuit Paul Ricard"
+        android:tag="Karting (Paul Ricard)"
         app:layout_constraintBottom_toBottomOf="@id/carte"
         app:layout_constraintEnd_toEndOf="@id/carte"
         app:layout_constraintStart_toStartOf="@id/carte"
@@ -162,7 +163,7 @@
         android:layout_marginStart="56dp"
         android:layout_marginTop="105dp"
         android:contentDescription="@string/description_logo_resto"
-        android:tag="Fontaine des saveurs"
+        android:tag="Courtepaille"
         app:layout_constraintBottom_toBottomOf="@id/carte"
         app:layout_constraintEnd_toEndOf="@id/carte"
         app:layout_constraintStart_toStartOf="@id/carte"
@@ -197,47 +198,6 @@
         app:layout_constraintTop_toTopOf="@id/carte"
         app:srcCompat="@drawable/logo_sport" />
 
-    <ImageView
-        android:id="@+id/logo14"
-        android:layout_width="30dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="57dp"
-        android:layout_marginTop="330dp"
-        android:contentDescription="@string/description_logo_magasin"
-        android:tag="InterSport"
-        app:layout_constraintBottom_toBottomOf="@id/carte"
-        app:layout_constraintEnd_toEndOf="@id/carte"
-        app:layout_constraintStart_toStartOf="@id/carte"
-        app:layout_constraintTop_toTopOf="@id/carte"
-        app:srcCompat="@drawable/logo_shop" />
-
-    <ImageView
-        android:id="@+id/logo15"
-        android:layout_width="30dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="121dp"
-        android:layout_marginTop="330dp"
-        android:tag="Courtepaille"
-        android:contentDescription="@string/description_logo_resto"
-        app:layout_constraintBottom_toBottomOf="@id/carte"
-        app:layout_constraintEnd_toEndOf="@id/carte"
-        app:layout_constraintStart_toStartOf="@id/carte"
-        app:layout_constraintTop_toTopOf="@id/carte"
-        app:srcCompat="@drawable/resto_logo" />
-
-    <ImageView
-        android:id="@+id/logo16"
-        android:layout_width="30dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="192dp"
-        android:layout_marginTop="330dp"
-        android:contentDescription="@string/description_logo_sport"
-        android:tag="ASPTT Charles"
-        app:layout_constraintBottom_toBottomOf="@id/carte"
-        app:layout_constraintEnd_toEndOf="@id/carte"
-        app:layout_constraintStart_toStartOf="@id/carte"
-        app:layout_constraintTop_toTopOf="@id/carte"
-        app:srcCompat="@drawable/logo_sport" />
 
     <ImageView
         android:id="@+id/logo17"
@@ -260,7 +220,7 @@
         android:layout_marginStart="213dp"
         android:layout_marginTop="300dp"
         android:contentDescription="@string/description_logo_resto"
-        android:tag="Citadelle de Belfort"
+        android:tag="La Citadelle de Belfort"
         app:layout_constraintBottom_toBottomOf="@id/carte"
         app:layout_constraintEnd_toEndOf="@id/carte"
         app:layout_constraintStart_toStartOf="@id/carte"
