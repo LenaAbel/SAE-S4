@@ -5,6 +5,7 @@
     android:id="@+id/navigation"
     app:startDestination="@id/accueilFragment">
 
+
     <fragment
         android:id="@+id/accueilFragment"
         android:name="com.example.sae.AccueilFragment"
@@ -59,7 +60,13 @@
         android:id="@+id/detailPrestaFragment"
         android:name="com.example.sae_s4.prestataire.DetailPrestaFragment"
         android:label="@string/page_detail_presta"
-        tools:layout="@layout/fragment_detail_presta" />
+        tools:layout="@layout/fragment_detail_presta">
+
+        <action
+            android:id="@+id/action_detail_to_map"
+            app:destination="@id/menu_map"/>
+    </fragment>
+
 
     <fragment
         android:id="@+id/menu_map"

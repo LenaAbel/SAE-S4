@@ -12,7 +12,8 @@
         android:layout_height="match_parent"
         android:padding="@dimen/space_btw_element"
         android:scrollbars="vertical"
-        tools:context=".prestataires.DetailPrestaFragment">
+        tools:context=".prestataires.DetailPrestaFragment"
+        android:background="@color/white">
 
         <TextView
             android:id="@+id/id_page_presta_nom"

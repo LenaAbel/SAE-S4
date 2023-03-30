@@ -77,12 +77,15 @@ class MainActivity : AppCompatActivity() {
 
         // Call the slideShow() method to start the automatic sliding
         slideShow()
+
+
     }
 
     override fun onSupportNavigateUp(): Boolean {
         val navController = this.findNavController(R.id.myNavHostFragment)
         return NavigationUI.navigateUp(navController, drawerLayout)
     }
+
 
     override fun onPause() {
         super.onPause()
