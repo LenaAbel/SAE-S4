@@ -103,6 +103,15 @@ class MainActivity : AppCompatActivity() {
         viewPager.setCurrentItem(position, false)
     }
 
+    override fun onStop() {
+        super.onStop()
+        countdownTimeCalculator()
+        // Récupérer la dernière position du slide à partir des préférences partagées et la définir sur le slide
+        val prefs = PreferenceManager.getDefaultSharedPreferences(this)
+        val position = prefs.getInt("current_slide_position", 0)
+        viewPager.setCurrentItem(position, false)
+    }
+
     /**
      * This function calculates the time left until the end date of the festival
      */
