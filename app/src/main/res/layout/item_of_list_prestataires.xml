@@ -35,7 +35,8 @@
         android:typeface="normal"
         app:layout_constraintStart_toEndOf="@id/id_img_presta"
         app:layout_constraintTop_toTopOf="@id/id_img_presta"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:fontFamily="@font/montserrat_medium" />
 
     <Button
         android:id="@+id/id_btn_site_presta"
