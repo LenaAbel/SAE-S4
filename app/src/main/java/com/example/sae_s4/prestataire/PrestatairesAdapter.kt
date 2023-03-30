@@ -45,7 +45,10 @@ class PrestatairesAdapter(
             Navigation.findNavController(view)
                 .navigate(
                     R.id.action_detail_presta,
-                    bundleOf("quel_type_presta" to type_prestataire, "presta" to position.toString())
+                    bundleOf(
+                        "quel_type_presta" to type_prestataire,
+                        "presta" to position.toString()
+                    )
                 )
         }
     }

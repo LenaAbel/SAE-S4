@@ -16,7 +16,6 @@ import com.example.sae_s4.prestataire.DetailPrestaFragment
 import com.example.sae.data.DataPrestataires
 
 
-
 class MapFragment : Fragment() {
 
     private lateinit var logoList: List<ImageView>
@@ -89,48 +88,48 @@ class MapFragment : Fragment() {
             }
         }
 
-            // Inflate the layout for this fragment
-            val rg = view.findViewById<RadioGroup>(R.id.type_presta)
-            rg.setOnCheckedChangeListener(onCheckedChangeListener)
+        // Inflate the layout for this fragment
+        val rg = view.findViewById<RadioGroup>(R.id.type_presta)
+        rg.setOnCheckedChangeListener(onCheckedChangeListener)
 
-            return view
-        }
+        return view
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-            super.onViewCreated(view, savedInstanceState)
-        }
+        super.onViewCreated(view, savedInstanceState)
+    }
 
-        private val onCheckedChangeListener =
-            RadioGroup.OnCheckedChangeListener { group, checkedId ->
-                when (checkedId) {
-                    R.id.resto -> {
-                        for (img in logoList) {
-                            if (img.contentDescription.equals("resto"))
-                                img.visibility = View.VISIBLE
-                            else
-                                img.visibility = View.INVISIBLE
-                        }
-                    }
-                    R.id.club -> {
-                        for (img in logoList) {
-                            if (img.contentDescription.equals("sport"))
-                                img.visibility = View.VISIBLE
-                            else
-                                img.visibility = View.INVISIBLE
-                        }
-                    }
-                    R.id.magasin -> {
-                        for (img in logoList) {
-                            if (img.contentDescription.equals("magasin"))
-                                img.visibility = View.VISIBLE
-                            else
-                                img.visibility = View.INVISIBLE
-                        }
-                    }
-                    R.id.id_btn_reset_filtre_map -> {
-                        for (img in logoList)
+    private val onCheckedChangeListener =
+        RadioGroup.OnCheckedChangeListener { group, checkedId ->
+            when (checkedId) {
+                R.id.resto -> {
+                    for (img in logoList) {
+                        if (img.contentDescription.equals("resto"))
                             img.visibility = View.VISIBLE
+                        else
+                            img.visibility = View.INVISIBLE
                     }
                 }
+                R.id.club -> {
+                    for (img in logoList) {
+                        if (img.contentDescription.equals("sport"))
+                            img.visibility = View.VISIBLE
+                        else
+                            img.visibility = View.INVISIBLE
+                    }
+                }
+                R.id.magasin -> {
+                    for (img in logoList) {
+                        if (img.contentDescription.equals("magasin"))
+                            img.visibility = View.VISIBLE
+                        else
+                            img.visibility = View.INVISIBLE
+                    }
+                }
+                R.id.id_btn_reset_filtre_map -> {
+                    for (img in logoList)
+                        img.visibility = View.VISIBLE
+                }
             }
-    }
+        }
+}

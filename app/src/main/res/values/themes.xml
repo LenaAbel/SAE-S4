@@ -12,13 +12,5 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="21">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <!-- Font -->
-        <item name="fontFamily">@font/montserrat_regular</item>
     </style>
-
-    <!-- For round images corners -->
-    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
-        <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">50%</item>
-        <item name="backgroundTint">@android:color/white</item></style>
 </resources>
