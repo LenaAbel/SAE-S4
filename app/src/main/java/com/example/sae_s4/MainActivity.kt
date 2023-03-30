@@ -101,6 +101,13 @@ class MainActivity : AppCompatActivity() {
         viewPager.setCurrentItem(position, false)
     }
 
+    override fun onStop() {
+        super.onStop()
+        // Récupérer la dernière position du slide à partir des préférences partagées et la définir sur le slide
+        val prefs = PreferenceManager.getDefaultSharedPreferences(this)
+        val position = prefs.getInt("current_slide_position", 0)
+        viewPager.setCurrentItem(position, false)
+    }
 
     /**
      * This function is used to start the automatic sliding of the images

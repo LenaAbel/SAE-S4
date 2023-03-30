@@ -31,12 +31,12 @@ class PlanningAdapter(
         for (item in dataPlanning) {
             if (dateRef.equals(item.date)) {
                 if (heure == item.debut) {
-                    holder.background.setBackgroundResource(R.color.blue.toInt())
+                    holder.background.setBackgroundResource(R.color.dark_blue.toInt())
                     holder.contenu.text = item.nom
                     return
                 }
                 if (heure >= item.debut && heure < item.fin) {
-                    holder.background.setBackgroundResource(R.color.blue.toInt())
+                    holder.background.setBackgroundResource(R.color.dark_blue.toInt())
                     holder.trait.visibility = View.INVISIBLE
                     return
                 }
